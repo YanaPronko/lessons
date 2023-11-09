@@ -45,7 +45,7 @@ body {
   text-transform: uppercase;
 }
 
-.photo {
+.photo__wrapper {
   text-align: center;
 }
 
@@ -73,4 +73,42 @@ li {
 footer a {
   text-decoration: underline;
   color: rgb(15, 200, 200);
+}
+
+footer {
+  margin-bottom: 50px;
+}
+
+/* Practice */
+
+.first__container {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7D7D7D;
+}
+
+.first__title,
+.first__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.first__title {
+  font-size: 30px;
+  line-height: 1.44;
+  color: #37393F;
+  text-transform: capitalize;
+}
+
+.first__subtitle {
+  font-size: 20px;
+  line-height: 1.35;
+  color: #6B77E5;
+}
+
+.text__wrapper p {
+  text-align: justify;
 }
