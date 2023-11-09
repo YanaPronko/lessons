@@ -38,13 +38,18 @@ h1 mark {
   color: blue;
 }
 
+.footer.contacts {
+  color: #09eeee;
+}
+
+.list-item .sublist {
+  color: rgb(225, 255, 0);
+}
+
 ol[title] {
   color: rgb(81, 255, 0);
 }
 
-ul[title] {
-  color:rgb(255, 77, 0)
-}
 
 [href*='https:'] {
   color: #1409ee;
