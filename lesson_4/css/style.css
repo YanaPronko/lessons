@@ -1,0 +1,56 @@
+/* Reset styles */
+
+@import url('reset.css');
+
+* {
+  font-size: 20px;
+}
+
+h1 {
+  color: #ee0909;
+}
+
+h1 mark {
+  color: #ee0909;
+}
+
+.about {
+  color: #3c3a3a;
+}
+
+.about span {
+  color: black;
+}
+
+.about p {
+  color: #a2ee09;
+}
+
+.about > p {
+  color: rgb(255, 77, 0);
+}
+
+.about ~ p {
+  color: violet;
+}
+
+.about + p {
+  color: blue;
+}
+
+ol[title] {
+  color: rgb(81, 255, 0);
+}
+
+ul[title] {
+  color:rgb(255, 77, 0)
+}
+
+[href*='https:'] {
+  color: #1409ee;
+}
+
+#contacts,
+#about {
+  color: #ee09d3;
+}
