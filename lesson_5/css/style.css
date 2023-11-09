@@ -81,9 +81,10 @@ footer {
 
 /* Practice */
 
-.first__container {
+.first__container,
+.second__container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -111,4 +112,34 @@ footer {
 
 .text__wrapper p {
   text-align: justify;
+}
+
+.second__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  color: #37393F;
+}
+.first__list,
+.second__list {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.first__list li{
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: 16px;
+}
+
+.second__list li {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  text-indent: 16px;
+}
+
+.second__text__wrapper {
+  text-align: justify;
+  line-height: 1.5;
 }
