@@ -165,18 +165,22 @@ footer {
   text-align: justify;
 }
 
+.block {
+  font-size: 0;
+}
+
 .laptop,
 .right-text-wrapper {
   display: inline-block;
 }
 
 .laptop {
-  max-width: 47%;
+  max-width: 331px;
   margin-right: 29px;
 }
 
 .right-text-wrapper {
-  max-width: 48%;
+  max-width: 332px;
 }
 
 .text-subtitle {
@@ -195,6 +199,7 @@ footer {
 }
 
 .text-list li {
+  font-size: 18px;
   margin-bottom: 35px;
 }
 
