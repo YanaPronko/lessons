@@ -211,7 +211,7 @@ footer {
   display: inline-block;
   max-width: 563px;
   margin-right: 38px;
-  padding-top: 21px;
+  padding: 21px 0 42px;
   font-size: 0;
 }
 
@@ -222,14 +222,13 @@ footer {
 }
 
 .content-wrapper-title {
+  margin-bottom: 25px;
   font-family: "DM Serif Text", serif;
   font-size: 59px;
   line-height: 1.45;
   color: #0E333D;
 }
-.second-container .text-wrapper {
-  padding-top: 25px;
-}
+
 .second-container .text-wrapper p {
   font-size: 20px;
   line-height: 1.8;
