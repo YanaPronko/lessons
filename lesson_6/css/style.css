@@ -127,7 +127,7 @@ footer {
 }
 
 .second-container {
-  max-width: 1200px;
+  max-width: 1169px;
   margin: 0 auto;
 }
 
@@ -211,7 +211,7 @@ footer {
   display: inline-block;
   max-width: 563px;
   margin-right: 38px;
-  font-size: 0;
+  /* font-size: 0; */
 }
 
 .content-wrapper-label {
@@ -232,6 +232,13 @@ footer {
   font-size: 20px;
   line-height: 1.8;
   color: #474747;
+}
+
+.image-wrapper {
+  display: inline-block;
+  max-width: 568px;
+  font-size: 0;
+  vertical-align: top;
 }
 
 .first-serge,
