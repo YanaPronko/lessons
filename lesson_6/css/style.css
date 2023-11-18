@@ -211,11 +211,12 @@ footer {
   display: inline-block;
   max-width: 563px;
   margin-right: 38px;
-  /* font-size: 0; */
+  padding: 21px 0 42px;
+  font-size: 0;
 }
 
 .content-wrapper-label {
-  margin: 21px 0 13px 0;
+  margin-bottom:13px;
   color: #D06B00;
   font-size: 28px;
 }

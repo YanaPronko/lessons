@@ -190,7 +190,8 @@ footer {
 
 .first-container,
 .second-container,
-.third-container {
+.third-container,
+.fourth-container {
   margin: 0 auto 50px;
   padding: 0 20px;
 }
@@ -208,6 +209,13 @@ footer {
 .third-container {
   max-width: 1240px;
   color: #807D7E;
+}
+
+.fourth-container {
+  max-width: 1143px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  color: #606060;
 }
 
 .layout-title,
@@ -308,8 +316,6 @@ footer {
   list-style-position: inside;
 }
 
-
-
 .second-list li {
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
@@ -351,6 +357,7 @@ footer {
   font-family: "Core Sans C", sans-serif;
   font-weight: 600;
 }
+
 .third-layout-title {
   font-size: 28px;
   font-weight: 600;
@@ -361,11 +368,18 @@ footer {
 
 .third-subtitle,
 .link {
-  margin-bottom: 25px;
   color: #807D7E;
   font-size: 20px;
   line-height: 1.7;
   letter-spacing: 0.4px;
+}
+
+.link {
+  padding: 5px 5px 5px 0;
+}
+
+.third-subtitle {
+  margin-bottom: 25px;
 }
 
 .content-wrapper p {
@@ -381,4 +395,65 @@ footer {
   font-weight: 700;
 }
 
-.link {}
+.fourth-container {
+  font-size: 0;
+}
+
+.left-box {
+  display: inline-block;
+  max-width: 503px;
+  margin-right: 75px;
+  padding: 70px 0;
+}
+
+.left-box .label {
+  margin-bottom: 27px;
+  color: #D58417;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.fourth-title {
+  margin-bottom: 31px;
+  color: #000000;
+  font-size: 64px;
+  text-transform: capitalize;
+}
+
+.fourth-text p {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.right-box {
+  display: inline-block;
+  font-size: 0;
+}
+
+.first-img-container,
+.second-img-container {
+  display: inline-block;
+  border-radius: 235px;
+  border: 1px solid #502203;
+}
+
+.first-img-container {
+  margin-right: 30px;
+  padding-right: 10px;
+  vertical-align: text-bottom;
+}
+
+.first-img-container img {
+  margin-left: -10px;
+  margin-top: 14px;
+}
+.second-img-container {
+  padding-right: 11px;
+  margin-top: -70px;
+  vertical-align: top;
+}
+
+.second-img-container img {
+  margin-top: 19px;
+  margin-left: -11px;
+}
