@@ -73,9 +73,159 @@ body {
 
 .no-repeat {
   background-image: url('../img/bird.jpg');
-  background-size: 200px;
+  background-size: 100px;
+  background-repeat: no-repeat;
 }
 
+.repeat {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+}
+
+.repeat-x {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-repeat: repeat-x;
+}
+
+.space {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-repeat: space;
+}
+
+.round {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-repeat: round;
+}
+
+.repeat-y {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-repeat: repeat-y;
+}
+
+.center {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.one-value {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-position: 250px;
+  background-repeat: no-repeat;
+}
+
+.some {
+  background-image: url('../img/bird.jpg');
+  background-size: 100px;
+  background-position: right 180px;
+  background-repeat: no-repeat;
+}
+
+.px {
+  background-image: url('../img/bird.jpg');
+  background-size: 250px 100px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.percent {
+  background-image: url('../img/bird.jpg');
+  background-size: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.width {
+  background-image: url('../img/bird.jpg');
+  background-size: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.height {
+  background-image: url('../img/bird.jpg');
+  background-size: auto 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  background-image: url('../img/bird.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contain {
+  background-image: url('../img/bird.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scroll {
+  background-image: url('../img/bird.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.fixed {
+  background-image: url('../img/bird.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.universal-img {
+  background: url("../img/bird.jpg") 0 0 / contain no-repeat;
+}
+
+.universal-gradient {
+  background: radial-gradient(circle, rgba(131, 58, 180, 1) 20%,
+      rgba(253, 29, 29, 0.8407738095238095) 74%, rgba(252, 69, 69, 1) 100%);
+}
+
+.universal-some {
+  background: url("../img/bird.jpg") 0 0 / 200px no-repeat;
+}
+
+.multi-img {
+  background: url("../img/bird.jpg") 50% / 200px no-repeat, url('../img/bg.jpg') left top / contain no-repeat, url('../img/BG_global.jpg') 0 0 / cover no-repeat fixed;
+}
+
+.multi-gradient {
+  background: linear-gradient(113deg, rgba(131, 58, 180, 1) 20%,
+    rgba(253, 29, 29, 0.8407738095238095) 74%, rgba(252, 69, 69, 1) 100%), radial-gradient(circle, rgba(131, 58, 180, 1) 20%,
+        rgba(253, 29, 29, 0.8407738095238095) 74%, rgba(252, 69, 69, 1) 100%);
+}
+
+.multi-some {
+  height: 200px;
+  background: url('../img/Group.png') center / cover no-repeat, radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), lightgray 0% 0% / 110.00000238418579px 110.00000238418579px repeat;
+}
 
 footer a {
   display: inline-block;
@@ -94,3 +244,327 @@ footer {
 
 /* Practice */
 
+.first-container,
+.second-container,
+.third-container {
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  color: #7D7D7D;
+}
+
+.first-container {
+  max-width: 713px;
+}
+
+.second-container {
+  max-width: 1260px;
+}
+
+.third-container {
+  max-width: 1240px;
+  color: #807D7E;
+}
+
+.bg {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  background: #40DDB6;
+}
+
+.label-wrapper {
+  margin-bottom: 16px;
+  font-size: 0;
+}
+
+.label {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #37393F;
+  text-transform: capitalize;
+}
+
+.heading {
+  color: #37393F;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.first-title {
+  max-width: 413px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.text-wrapper {
+  margin-bottom: 20px;
+}
+
+.text-wrapper p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.first-list {
+  margin-bottom: 43px;
+}
+
+.first-list li {
+  min-height: 30px;
+  padding-left: 35px;
+  margin-bottom: 23px;
+  color: #37393F;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1.65;
+  background: url('../img/Vector.svg') 0 3px / 27px no-repeat;
+}
+
+.content-wrapper {
+  font-size: 0;
+}
+
+.content-wrapper > div{
+  display: inline-block;
+}
+
+.left-block,
+.right-block {
+  max-width: 295px;
+  padding: 32px 32px 32px 90px;
+}
+
+.right-block p,
+.left-block p {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.left-block {
+  margin-right: 21px;
+  background: url('../img/left_icon.svg') 32px 32px / 39px 38px no-repeat;
+}
+
+.subtitle {
+  color: #37393F;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.right-block {
+  background: url("../img/right_icon.svg") 32px 32px / 39px 38px no-repeat;
+}
+
+.btn {
+  padding: 22px 27px;
+  background: #6B77E5;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+
+.second-container .label-wrapper {
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.second-title {
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.second-container .text-wrapper {
+  max-width: 852px;
+  margin: 0 auto 47px;
+
+}
+
+.second-container .text-wrapper p {
+  text-align: center;
+}
+
+.first-row,
+.second-row {
+  font-size: 0;
+}
+
+.card {
+  width: 384px;
+  padding-top: 525px
+}
+
+.second-subtitle {
+  color: #37393F;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.date {
+  padding-left: 25px;
+  color: #7D7D7D;
+  font-size: 14px;
+  line-height: 1.5;
+  background: url('../img/date_icon.svg') no-repeat;
+}
+
+.first-row {
+  margin-bottom: 58px;
+}
+
+.first-row > div {
+  display: inline-block;
+}
+
+.second-row > div {
+  display: inline-block;
+}
+
+.card-1 {
+  margin-right: 34px;
+  background: url('../img/card_1.jpg') 0 0 / contain no-repeat;
+}
+
+.card-2 {
+  margin-right: 34px;
+  background: url('../img/card_2.jpg') 0 0 / contain no-repeat;
+}
+
+.card-3 {
+  background: url('../img/card_3.jpg') 0 0 / contain no-repeat;
+}
+
+.card-4 {
+  margin-right: 34px;
+  background: url('../img/card_4.jpg') 0 0 / contain no-repeat;
+}
+
+.card-5 {
+  margin-right: 34px;
+  background: url('../img/card_5.jpg') 0 0 / contain no-repeat;
+}
+
+.card-6 {
+  background: url('../img/card_6.jpg') 0 0 / contain no-repeat;
+}
+
+.third-title-wrapper {
+  max-width: 100%;
+  margin-bottom: 30px;
+  font-size: 0;
+}
+
+.third-title-wrapper>* {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mark {
+  width: 6px;
+  height: 28px;
+  margin-right: 15px;
+  margin-left: -20px;
+  background:#8A33FD;
+  border-radius: 10px;
+}
+
+.third-layout-title,
+.third-subtitle,
+.link {
+  font-family: "Core Sans C", sans-serif;
+  font-weight: 600;
+}
+
+.third-layout-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.56px;
+  color: #3C4242;
+}
+
+.third-subtitle,
+.link {
+  color: #807D7E;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: 0.4px;
+}
+
+.link {
+  padding: 5px 5px 5px 0;
+}
+
+.third-subtitle {
+  margin-bottom: 25px;
+}
+
+.third-content-wrapper p {
+  margin-bottom: 20px;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.4px;
+  color: #807D7E;
+}
+
+.third-content-wrapper span {
+  font-weight: 700;
+}
+
+.fourth-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 183px  0 174px 74px;
+  font-family: "Causten", sans-serif;
+  color: #FFF;
+  background: url(../img/unsplash_bg.png) 0 0 / contain no-repeat, url('../img/girls_and_man.png') 100% 0 / contain no-repeat;
+  border-radius: 3px;
+}
+
+.fourth-title {
+  max-width: 466px;
+  margin-bottom: 30px;
+  font-family: "Core Sans C", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.208px;
+  text-transform: uppercase;
+}
+
+.fourth-container .text-wrapper p {
+  max-width: 451px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.fourth-container .text-wrapper {
+  margin-bottom: 50px;
+}
+
+.btn-link {
+  padding: 12px 44px;
+  color: #3C4242;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  background: #FFF;
+  border-radius: 8px;
+}
