@@ -81,9 +81,16 @@ body {
 }
 
 .item-product__img-link {
+  min-height: 393px;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
+  transition: 0.3s all ease;
 }
 
+.item-product__img-link:hover {
+  transform: scale(1.1);
+}
 
 .item-product__img-link img {
   max-width: 100%;
@@ -111,6 +118,12 @@ body {
   font-weight: 700;
   line-height: 1.56;
   letter-spacing: -0.715px;
+  transition: 0.3s all ease;
+}
+
+.item-product__title-link:hover {
+  color: #8A33FD;
+  text-decoration: underline;
 }
 
 .link {
@@ -120,6 +133,11 @@ body {
   font-weight: 500;
   line-height: 2;
   letter-spacing: -0.536px;
+  transition: 0.3s all ease;
+}
+
+.link:hover{
+  text-decoration: underline;
 }
 
 .item-product__arrow {
@@ -129,6 +147,8 @@ body {
   min-height: 14px;
   align-self: flex-start;
   background: url('../img/products/Arrow.svg') center no-repeat;
+  transition: 0.3s all ease;
+  cursor: pointer;
 }
 
 .second-container {
@@ -144,6 +164,15 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 34px 100px 31px;
+}
+
+.header__logo {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header__logo:hover {
+  transform: scale(1.1);
 }
 
 .left-block {
@@ -167,6 +196,7 @@ body {
   gap: 12px;
   background: #F6F6F6;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .search__label {
@@ -186,6 +216,7 @@ body {
   display: flex;
   align-items: center;
   gap: 19px;
+  cursor: pointer;
 }
 
 .select__label {
@@ -213,6 +244,7 @@ body {
   align-items: center;
   width: max-content;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .btns-header {
@@ -224,9 +256,18 @@ body {
   background: #8A33FD;
 }
 
+.btn--background:hover {
+  background: #6620C1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
 .btn--outline {
   color: #8A33FD;
   border: 1px solid #3C4242;
+}
+
+.btn--outline:hover {
+  background: rgba(102, 32, 193, 0.03);
 }
 
 .third-container {
@@ -273,6 +314,7 @@ body {
 .cross {
   width: 22px;
   height: 22px;
+  cursor: pointer;
 }
 
 .image-link {
@@ -281,7 +323,7 @@ body {
   border-radius: 4px;
 }
 
-.image-link__image {
+.image-link__img {
   max-width: 100%;
   border-radius: 4px;
 }
