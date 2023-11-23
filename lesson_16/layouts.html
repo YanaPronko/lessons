@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Layouts of Yana Pranko</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header container">
+      <h2 class="sub-heading header__sub-heading">Header</h2>
+      <ul class="list header__list">
+        <li class="list__item">
+          <a href="index.html" class="list__link">Training</a>
+        </li>
+        <li class="list__item">
+          <a href="layouts.html" class="list__link">Layouts</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="form-container">
+        <h1 class="heading">Layouts</h1>
+        <div class="form-wrapper">
+          <div class="title-block">
+            <h2 class="title">My Info</h2>
+            <h3 class="subtitle">Add Address</h3>
+          </div>
+          <form action="#" enctype="multipart/form-data" class="form">
+            <div class="form__inputs-wrap">
+              <div class="form__item">
+                <label class="form__label">
+                  First Name*
+                  <input name="name" type="text" required placeholder="First Name" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Last Name*
+                  <input name="lastname"  required type="text"  placeholder="Last Name" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Country / Region*
+                  <input name="country" required  type="text"  placeholder="Last Name" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Company Name
+                  <input name="company" type="text" required placeholder="Company (optional)" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Street Address*
+                  <input name="adress" type="text" required placeholder="House number and street name" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Apt, suite, unit
+                  <input name="unit" type="text" placeholder="apartment, suite, unit, etc. (optional)" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  City*
+                  <input name="city" type="text" required placeholder="Town/City" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  State*
+                  <select name="state" type="text" placeholder="State" class="form__input select">
+                    <option selected>State</option>
+                    <option>Arizona</option>
+                    <option>Washington</option>
+                    <option>California</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Phone*
+                  <input name="phone" type="text" placeholder="Phone" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Postal Code*
+                  <input name="code" type="text" placeholder="Postal Code" class="form__input">
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  Delivery Instruction
+                  <textarea name="instruction" cols="30" rows="10" placeholder="Delivery Instruction" class="form__input form__input--textarea"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="form__item form__item--checkbox">
+              <input id="shipping" type="checkbox" class="form__input checkbox">
+              <label for="shipping" class="form__label form__label--checkbox">Set as default shipping address</label>
+            </div>
+            <div class="form__item form__item--checkbox form__item--margin">
+              <input id="billing" type="checkbox" class="form__input checkbox">
+              <label for="billing" class="form__label form__label--checkbox">Set as default billing address</label>
+            </div>
+            <div class="form__btns">
+              <button type="submit" class="btn btn--background">Save</button>
+              <button type="reset"  class="btn btn--outline">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer container">
+      <h2 class="sub-heading footer__sub-heading">Footer</h2>
+      <div class="contacts">
+        <h2 class="sub-heading">Contacts:</h2>
+        <ul class="list contacts__list">
+          <li>
+            <a href="https://discordapp.com/users/866330088731574273" target="_blank" class="list__link">Dicsord:
+              YaniaR(YanaPronko)</a>
+          </li>
+          <li>
+            <a href="mailto:yaniar@tut.by" class="list__link">Email: <span>yaniar@tut.by</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/YanaPronko" target="_blank" class="list__link">Github: Yana Pranko</a>
+          </li>
+        </ul>
+      </div>
+
+    </footer>
+
+</body>
+</html>
