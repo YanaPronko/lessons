@@ -88,7 +88,7 @@ body {
 
 .contacts__list {
   margin: 0;
-  flex: 0 1 45%;
+  width: max-content;
 }
 
 /* Layouts */
@@ -179,6 +179,7 @@ body {
   flex: 0 1 100%;
   min-height: 149px;
   resize: vertical;
+  line-height: 1.5;
 }
 
 .form__item--checkbox {
@@ -315,3 +316,7 @@ body {
   height: 22px;
   border: 1px solid #b3065c;
 } */
+
+.checkout__container {
+  max-width: 870px;
+}

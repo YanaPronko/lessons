@@ -43,7 +43,7 @@
               </div>
               <div class="form__item">
                 <label class="form__label">
-                  Country / Region*
+                  Country/Region*
                   <input name="country" required  type="text"  placeholder="Last Name" class="form__input">
                 </label>
               </div>
@@ -74,7 +74,7 @@
               <div class="form__item">
                 <label class="form__label">
                   State*
-                  <select name="state" type="text" placeholder="State" class="form__input select">
+                  <select name="state" type="text" required placeholder="State" class="form__input select">
                     <option selected>State</option>
                     <option>Arizona</option>
                     <option>Washington</option>
@@ -85,13 +85,13 @@
               <div class="form__item">
                 <label class="form__label">
                   Phone*
-                  <input name="phone" type="text" placeholder="Phone" class="form__input">
+                  <input name="phone" type="number" required placeholder="Phone" class="form__input">
                 </label>
               </div>
               <div class="form__item">
                 <label class="form__label">
                   Postal Code*
-                  <input name="code" type="text" placeholder="Postal Code" class="form__input">
+                  <input name="code" type="text" required placeholder="Postal Code" class="form__input">
                 </label>
               </div>
               <div class="form__item">
@@ -116,6 +116,181 @@
           </form>
         </div>
       </div>
+      <div class="checkout__container">
+        <div class="title-block">
+          <h2 class="title">Check Out</h2>
+          <h3 class="subtitle">Billing Details</h3>
+        </div>
+        <form action="#" enctype="multipart/form-data" class="form">
+          <div class="form__inputs-wrap">
+            <div class="form__item">
+              <label class="form__label">
+                First Name*
+                <input name="name" type="text" required placeholder="First Name" class="form__input">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                Last Name*
+                <input name="lastname"  required type="text"  placeholder="Last Name" class="form__input">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                Country/Region*
+                <input name="country" required  type="text"  placeholder="Last Name" class="form__input">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                Company Name
+                <input name="company" type="text" required placeholder="Company (optional)" class="form__input">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                Street Address*
+                <input name="adress" type="text" required placeholder="House number and street name" class="form__input">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                Apt, suite, unit
+                <input name="unit" type="text" placeholder="apartment, suite, unit, etc. (optional)" class="form__input">
+              </label>
+            </div>
+          </div>
+          <div class="form__inputs-wrap--four">
+            <div class="form__item">
+              <label class="form__label">
+                City*
+                <input name="city" type="text" required placeholder="Town/City" class="form__input">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                State*
+                <select name="state" type="text" required placeholder="State" class="form__input select">
+                  <option selected>State</option>
+                  <option>Arizona</option>
+                  <option>Washington</option>
+                  <option>California</option>
+                </select>
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                Postal Code*
+                <input name="code" type="text" required placeholder="Postal Code" class="form__input">
+              </label>
+            </div>
+          </div>
+          <div class="form__item form__item--one">
+            <label class="form__label">
+              Phone*
+              <input name="phone" type="number" required placeholder="Phone" class="form__input">
+            </label>
+          </div>
+          <div class="save-block">
+            <button type="submit" class="btn btn--background">Save</button>
+            <div class="form__item form__item--checkbox">
+              <input id="saving" type="checkbox" class="form__input checkbox">
+              <label for="saving" class="form__label form__label--checkbox">Save my information for a faster checkout</label>
+            </div>
+          </div>
+          <div class="adress-block">
+            <div class="subtitle-block">
+              <h3 class="subtitle">Shipping Address</h3>
+              <p>Select the address that matches your card or payment method.</p>
+            </div>
+            <fieldset class="adress-block__group">
+              <div class="adress-block__radio">
+                <input checked id="billing-radio" name="adress-radio" value="billing-radio" type="radio">
+                <label for="billing-radio">Same as Billing address</label>
+              </div>
+              <div class="adress-block__radio">
+                <input id="shipping-radio" name="adress-radio" value="shipping-radio" type="radio">
+                <label for="shipping-radio">Use a different shipping address</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="shipping-block">
+            <div class="subtitle-block">
+              <h3 class="subtitle">Shipping Method</h3>
+            </div>
+            <div class="delivery-info">
+              <div class="delivery-info__date">
+                <h4 class="fourth-level-title">Arrives by Monday, June 7</h4>
+              </div>
+              <div class="delivery-info__charge">
+                <div class="delivery-info__subtitles">
+                  <h4 class="fourth-level-title">Delivery Charges</h4>
+                  <p>Additional fess may apply</p>
+                </div>
+                <div class="delivery-info__price">
+                  $5.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-block">
+            <div class="subtitle-block">
+              <h3 class="subtitle">Payment Method</h3>
+              <p>All transactions are secure and encrypted.</p>
+            </div>
+            <fieldset class="payment-block__group">
+              <div class="payment-block__radio">
+                <input checked id="credit" name="payment-radio" value="card" type="radio">
+                <label for="credit">
+                  Credit Card
+                  <p>We accept all major credit cards.</p>
+                  <div class="credit-cards">
+                    <div class="credit-card">
+                      <img src="img/cards/gpay.svg" alt="gpay" class="credit-icon">
+                    </div>
+                    <div class="credit-card">
+                      <img src="img/cards/visa.svg" alt="gpay" class="credit-icon">
+                    </div>
+                    <div class="credit-card">
+                      <img src="img/cards/paypal.svg" alt="gpay" class="credit-icon">
+                    </div>
+                    <div class="credit-card">
+                      <img src="img/cards/paypass.svg" alt="gpay" class="credit-icon">
+                    </div>
+                  </div>
+                  <div class="cards-info">
+                    <div class="form__item">
+                      <input name="card-number" type="number" placeholder="Card number" class="form__input form__input--border">
+                    </div>
+                    <div class="form__item">
+                      <input name="card-name" type="text" placeholder="Name of card" class="form__input form__input--border">
+                    </div>
+                    <div class="form__item">
+                      <input name="card-date" type="date" placeholder="Expiration date (MM/YY)" class="form__input form__input--border">
+                    </div>
+                    <div class="form__item">
+                      <input name="card-code" type="password" placeholder="Security Code" class="form__input form__input--border">
+                      <img src="img/cards/eye.svg" alt="eye" class="code-icon">
+                    </div>
+                  </div>
+              </label>
+              </div>
+              <div class="payment-block__radio">
+                <input id="cash" name="payment-radio" value="cash" type="radio">
+                <label for="cash">
+                  Cash on delivery
+                  <p>Pay with cash upon delivery.</p>
+                </label>
+              </div>
+              <div class="payment-block__radio">
+                <input id="paypol" name="payment-radio" value="paypol" type="radio">
+                <label for="paypol">Paypol</label>
+              </div>
+            </fieldset>
+          </div>
+            <button type="submit" class="btn btn--background">Save</button>
+        </form>
+      </div>
     </main>
     <footer class="footer container">
       <h2 class="sub-heading footer__sub-heading">Footer</h2>
@@ -134,8 +309,7 @@
           </li>
         </ul>
       </div>
-
     </footer>
-
+  </div>
 </body>
 </html>
