@@ -23,7 +23,7 @@
       <div class="form-container">
         <h1 class="heading">Layouts</h1>
         <div class="form-wrapper">
-          <div class="title-block">
+          <div class="form-wrapper__title-block">
             <h2 class="title">My Info</h2>
             <h3 class="subtitle">Add Address</h3>
           </div>
@@ -74,7 +74,7 @@
               <div class="form__item">
                 <label class="label">
                   State*
-                  <select name="state" type="text" required placeholder="State" class="form__input select">
+                  <select name="state" type="text" required placeholder="State" class="form__input select form__input--select">
                     <option selected>State</option>
                     <option>Arizona</option>
                     <option>Washington</option>
@@ -102,11 +102,11 @@
               </div>
             </div>
             <div class="form__item form__item--checkbox">
-              <input id="shipping" type="checkbox" class="form__input checkbox">
+              <input id="shipping" type="checkbox" class="form__input form__input--checkbox checkbox">
               <label for="shipping" class="label label--checkbox">Set as default shipping address</label>
             </div>
             <div class="form__item form__item--checkbox form__item--margin">
-              <input id="billing" type="checkbox" class="form__input checkbox">
+              <input id="billing" type="checkbox" class="form__input form__input--checkbox checkbox">
               <label for="billing" class="label label--checkbox">Set as default billing address</label>
             </div>
             <div class="form__btns">
@@ -117,179 +117,183 @@
         </div>
       </div>
       <div class="checkout-container">
-        <div class="title-block">
+        <div class="ckeckout__title-block">
           <h2 class="title title--decor">Check Out</h2>
           <h3 class="subtitle">Billing Details</h3>
         </div>
         <form action="#" enctype="multipart/form-data" class="checkout-form form">
-          <div class="checkout-form__inputs-wrap">
-            <div class="checkout-form__item">
-              <label class="label">
-                First Name*
-                <input name="name" type="text" required placeholder="First Name" class="form__input">
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                Last Name*
-                <input name="lastname"  required type="text"  placeholder="Last Name" class="form__input">
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                Country/Region*
-                <input name="country" required  type="text"  placeholder="Last Name" class="form__input">
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                Company Name
-                <input name="company" type="text" required placeholder="Company (optional)" class="form__input">
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                Street Address*
-                <input name="adress" type="text" required placeholder="House number and street name" class="form__input">
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                Apt, suite, unit
-                <input name="unit" type="text" placeholder="apartment, suite, unit, etc. (optional)" class="form__input">
-              </label>
-            </div>
-          </div>
-          <div class="form__inputs-wrap form__inputs-wrap--three">
-            <div class="checkout-form__item">
-              <label class="label">
-                City*
-                <input name="city" type="text" required placeholder="Town/City" class="form__input">
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                State*
-                <select name="state" type="text" required placeholder="State" class="form__input select">
-                  <option selected>State</option>
-                  <option>Arizona</option>
-                  <option>Washington</option>
-                  <option>California</option>
-                </select>
-              </label>
-            </div>
-            <div class="checkout-form__item">
-              <label class="label">
-                Postal Code*
-                <input name="code" type="text" required placeholder="Postal Code" class="form__input">
-              </label>
-            </div>
-          </div>
-          <div class="checkout-form__item checkout-form__item--one">
-            <label class="label">
-              Phone*
-              <input name="phone" type="number" required placeholder="Phone" class="form__input">
-            </label>
-          </div>
-          <div class="save-block">
-            <button type="submit" class="btn save-block__btn btn--background btn--medium">Continue to delivery</button>
-            <div class="checkout-form__item save-block__checkbox form__item--checkbox">
-              <input id="saving" type="checkbox" class="form__input checkbox">
-              <label for="saving" class="label label--checkbox">Save my information for a faster checkout</label>
-            </div>
-          </div>
-          <div class="adress-block">
-            <div class="subtitle-block">
-              <h3 class="subtitle">Shipping Address</h3>
-              <p>Select the address that matches your card or payment method.</p>
-            </div>
-            <fieldset class="adress-block__group">
-              <div class="adress-block__radio">
-                <input checked id="billing-radio" name="adress-radio" value="billing-radio" type="radio">
-                <label for="billing-radio">Same as Billing address</label>
-              </div>
-              <div class="adress-block__radio">
-                <input id="shipping-radio" name="adress-radio" value="shipping-radio" type="radio">
-                <label for="shipping-radio">Use a different shipping address</label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="shipping-block">
-            <div class="subtitle-block">
-              <h3 class="subtitle">Shipping Method</h3>
-            </div>
-            <div class="delivery-info">
-              <div class="delivery-info__date">
-                <h4 class="fourth-level-title">Arrives by Monday, June 7</h4>
-              </div>
-              <div class="delivery-info__charge">
-                <div class="delivery-info__subtitles">
-                  <h4 class="fourth-level-title">Delivery Charges</h4>
-                  <p>Additional fess may apply</p>
-                </div>
-                <div class="delivery-info__price">
-                  $5.00
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="payment-block">
-            <div class="subtitle-block">
-              <h3 class="subtitle">Payment Method</h3>
-              <p>All transactions are secure and encrypted.</p>
-            </div>
-            <fieldset class="payment-block__group">
-              <div class="payment-block__radio">
-                <input checked id="credit" name="payment-radio" value="card" type="radio">
-                <label for="credit">
-                  Credit Card
-                  <p>We accept all major credit cards.</p>
-                  <div class="credit-cards">
-                    <div class="credit-card">
-                      <img src="img/cards/gpay.svg" alt="gpay" class="credit-icon">
-                    </div>
-                    <div class="credit-card">
-                      <img src="img/cards/visa.svg" alt="gpay" class="credit-icon">
-                    </div>
-                    <div class="credit-card">
-                      <img src="img/cards/paypal.svg" alt="gpay" class="credit-icon">
-                    </div>
-                    <div class="credit-card">
-                      <img src="img/cards/paypass.svg" alt="gpay" class="credit-icon">
-                    </div>
-                  </div>
-                  <div class="cards-info">
-                    <div class="form__item">
-                      <input name="card-number" type="number" placeholder="Card number" class="form__input form__input--border">
-                    </div>
-                    <div class="form__item">
-                      <input name="card-name" type="text" placeholder="Name of card" class="form__input form__input--border">
-                    </div>
-                    <div class="form__item">
-                      <input name="card-date" type="date" placeholder="Expiration date (MM/YY)" class="form__input form__input--border">
-                    </div>
-                    <div class="form__item">
-                      <input name="card-code" type="password" placeholder="Security Code" class="form__input form__input--border">
-                      <img src="img/cards/eye.svg" alt="eye" class="code-icon">
-                    </div>
-                  </div>
-              </label>
-              </div>
-              <div class="payment-block__radio">
-                <input id="cash" name="payment-radio" value="cash" type="radio">
-                <label for="cash">
-                  Cash on delivery
-                  <p>Pay with cash upon delivery.</p>
+          <div class="first-group">
+            <div class="checkout-form__inputs-wrap">
+              <div class="checkout-form__item">
+                <label class="label">
+                  First Name*
+                  <input name="name" type="text" required placeholder="First Name" class="form__input">
                 </label>
               </div>
-              <div class="payment-block__radio">
-                <input id="paypol" name="payment-radio" value="paypol" type="radio">
-                <label for="paypol">Paypol</label>
+              <div class="checkout-form__item">
+                <label class="label">
+                  Last Name*
+                  <input name="lastname" required type="text" placeholder="Last Name" class="form__input">
+                </label>
               </div>
-            </fieldset>
+              <div class="checkout-form__item">
+                <label class="label">
+                  Country/Region*
+                  <input name="country" required type="text" placeholder="Last Name" class="form__input">
+                </label>
+              </div>
+              <div class="checkout-form__item">
+                <label class="label">
+                  Company Name
+                  <input name="company" type="text" required placeholder="Company (optional)" class="form__input">
+                </label>
+              </div>
+              <div class="checkout-form__item">
+                <label class="label">
+                  Street Address*
+                  <input name="adress" type="text" required placeholder="House number and street name" class="form__input">
+                </label>
+              </div>
+              <div class="checkout-form__item">
+                <label class="label">
+                  Apt, suite, unit
+                  <input name="unit" type="text" placeholder="apartment, suite, unit, etc. (optional)" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="form__inputs-wrap form__inputs-wrap--three">
+              <div class="checkout-form__item">
+                <label class="label">
+                  City*
+                  <input name="city" type="text" required placeholder="Town/City" class="form__input">
+                </label>
+              </div>
+              <div class="checkout-form__item">
+                <label class="label">
+                  State*
+                  <select name="state" type="text" required placeholder="State" class="form__input select form__iput--select">
+                    <option selected>State</option>
+                    <option>Arizona</option>
+                    <option>Washington</option>
+                    <option>California</option>
+                  </select>
+                </label>
+              </div>
+              <div class="checkout-form__item">
+                <label class="label">
+                  Postal Code*
+                  <input name="code" type="text" required placeholder="Postal Code" class="form__input">
+                </label>
+              </div>
+            </div>
+            <div class="checkout-form__item checkout-form__item--one">
+              <label class="label">
+                Phone*
+                <input name="phone" type="number" required placeholder="Phone" class="form__input">
+              </label>
+            </div>
+            <div class="save-block checkout-form__save-block">
+              <button type="submit" class="btn save-block__btn btn--background btn--medium">Continue to delivery</button>
+              <div class="checkout-form__item save-block__checkbox form__item--checkbox">
+                <input id="saving" type="checkbox" class="form__input form__input--checkbox checkbox">
+                <label for="saving" class="label label--checkbox">Save my information for a faster checkout</label>
+              </div>
+            </div>
           </div>
-            <button type="submit" class="btn btn--background">Save</button>
+          <div class="adress-block group">
+          <div class="group__subtitle-block">
+            <h3 class="subtitle">Shipping Address</h3>
+            <p>Select the address that matches your card or payment method.</p>
+          </div>
+          <fieldset class="group__item adress-block__item">
+            <div class="adress-block__radio radio-item">
+              <input checked id="billing-radio" name="adress-radio" value="billing-radio" type="radio" class="radio-item__input radio">
+              <label for="billing-radio" class="radio-item__label group__label">Same as Billing address</label>
+            </div>
+            <div class="adress-block__radio">
+              <input id="shipping-radio" name="adress-radio" value="shipping-radio" type="radio" class="radio-item__input radio">
+              <label for="shipping-radio" class="radio-item__label group__label">Use a different shipping address</label>
+            </div>
+          </fieldset>
+          </div>
+          <div class="shipping-block group">
+          <div class="group__subtitle-block">
+            <h3 class="subtitle">Shipping Method</h3>
+          </div>
+          <div class="group__item shipping-block__item">
+            <div class="shipping-block__date">
+              <h4 class="group__label">Arrives by Monday, June 7</h4>
+            </div>
+            <div class="shipping-block__charge">
+              <div class="shipping-block__subtitles">
+                <h4 class="group__label">Delivery Charges</h4>
+                <p>Additional fess may apply</p>
+              </div>
+              <div class="group__label">
+                $5.00
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="payment-block group">
+          <div class="group__subtitle-block">
+            <h3 class="subtitle">Payment Method</h3>
+            <p>All transactions are secure and encrypted.</p>
+          </div>
+          <fieldset class="payment-block__item group__item">
+            <div class="payment-block__radio radio-item">
+              <input checked id="credit" name="payment-radio" value="card" type="radio" class="radio-item__input radio">
+              <label for="credit" class="radio-item__label group__label">
+                Credit Card
+              </label>
+              <div class="radio-item__descr">
+                <p>We accept all major credit cards.</p>
+                <div class="credit-cards">
+                <div class="credit-card">
+                  <img src="img/cards/gpay.svg" alt="gpay" class="credit-icon">
+                </div>
+                <div class="credit-card">
+                  <img src="img/cards/visa.svg" alt="gpay" class="credit-icon">
+                </div>
+                <div class="credit-card">
+                  <img src="img/cards/paypal.svg" alt="gpay" class="credit-icon">
+                </div>
+                <div class="credit-card">
+                  <img src="img/cards/paypass.svg" alt="gpay" class="credit-icon">
+                </div>
+                </div>
+                <div class="cards-info">
+                <div class="cards-info__item">
+                  <input name="card-number" type="number" placeholder="Card number" class="form__input cards-info__input">
+                </div>
+                <div class="cards-info__item">
+                  <input name="card-name" type="text" placeholder="Name of card" class="form__input cards-info__input">
+                </div>
+                <div class="cards-info__item">
+                  <input name="card-date" type="month"  placeholder="Expiration date (MM/YY)" class="form__input cards-info__input form__input--date">
+                </div>
+                <div class="cards-info__item cards-info__password">
+                  <input name="card-code" type="password" placeholder="Security Code" class="form__input cards-info__input form__input--password">
+                  <img src="img/cards/eye.svg" alt="eye" class="code-icon">
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-block__radio radio-item">
+              <input id="cash" name="payment-radio" value="cash" type="radio" class="radio-item__input radio">
+              <label for="cash" class="radio-item__label group__label">Cash on delivery</label>
+              <div class="radio-item__descr">
+                <p>Pay with cash upon delivery.</p>
+              </div>
+            </div>
+            <div class="payment-block__radio radio-item">
+              <input id="paypol" name="payment-radio" value="paypol" type="radio" class="radio-item__input radio">
+              <label for="paypol" class="radio-item__label group__label">Paypol</label>
+            </div>
+          </fieldset>
+          </div>
         </form>
+        <button form="checkout-form" type="submit" class="btn btn--background btn--medium">Pay Now</button>
       </div>
     </main>
     <footer class="footer container">

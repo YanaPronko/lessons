@@ -101,11 +101,11 @@ body {
   padding-bottom: 85px;
 }
 
-.title-block > *:not(:last-child) {
+.form-wrapper__title-block > *:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.title-block:not(:last-child) {
+.form-wrapper__title-block:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -195,7 +195,7 @@ body {
   margin-bottom: 61px;
 }
 
-.checkbox {
+.form__input--checkbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -289,12 +289,15 @@ body {
 }
 
 .select {
-  position: relative;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   display: inline-flex;
   background: url('../img/chevron.svg') 95% 50% / 25px 25px no-repeat, #F6F6F6;
+}
+
+.form__iput--select {
+  position: relative;
 }
 
 .select option {
@@ -325,6 +328,26 @@ body {
   max-width: 870px;
 }
 
+.checkout-form:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.checkout-form > *:not(:last-child)  {
+  border-bottom: 5px solid #EDEEF2;
+}
+
+.first-group {
+  padding-bottom: 32px;
+}
+
+.ckeckout__title-block > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.ckeckout__title-block:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 .title--decor {
   display: inline-flex;
   gap: 15px;
@@ -342,7 +365,6 @@ body {
 .subtitle {}
 
 .form {}
-
 
 
 .checkout-form__inputs-wrap {
@@ -380,12 +402,16 @@ body {
 
 .select {}
 
+.checkout-form__item--one {
+  max-width: 50%;
+}
+
 .checkout-form__item--one:not(:last-child) {
   margin: 0 -19px 40px;
 }
 
-.save-block:not(:last-child) {
-  margin-bottom: 60px;
+.checkout-form__save-block:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .save-block__btn:not(:last-child) {
@@ -400,17 +426,134 @@ body {
   padding: 0;
 }
 
-.adress-block {}
+.group {
+  padding: 30px 0;
+}
 
-.subtitle-block:not(:last-child) {
+.group__item {
+  border-radius: 12px;
+  background: #F6F6F6;
+}
+
+.group__item > *:not(:last-child) {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 5px solid #BEBCBD;
+}
+
+.adress-block__item {
+  padding: 38px 48px 38px 28px;
+}
+
+.shipping-block__item {
+  padding: 32px 48px 32px 26px;
+}
+
+.payment-block__item {
+  padding: 45px 48px 28px 45px;
+}
+
+.payment-block__item > *:not(:last-child){
+  padding-bottom: 30px;
   margin-bottom: 30px;
 }
 
-.adress-block__group {}
+.group__subtitle-block p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #3C4242;
+}
 
-.adress-block__radio {}
+.group__subtitle-block > *:not(:last-child) {
+  margin-bottom: 8px;
+}
 
-.shipping-block {}
+.group__subtitle-block:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+.adress-block__radio {
+  position: relative;
+}
+
+.radio-item__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.group__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  color: #3C4242;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.group__label:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.radio-item__descr p {
+  color: #3C4242;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.radio:focus-visible + .radio-item__label {
+  outline: 1px solid #8A33FD;
+}
+
+.radio:checked + .radio-item__label::before {
+  background: url('../img/radio.svg') center / cover no-repeat;
+  border:none;
+}
+
+.radio-item__label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  border: 2px solid #BEBCBD;
+  border-radius: 50%;
+}
+
+.radio-item__descr {
+  padding: 0 23px 0 37px;
+}
+
+.radio-item__descr > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+
+.shipping-block .group__label {
+  margin-bottom: 8px;
+}
+
+.shipping-block__charge {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.shipping-block__subtitles p {
+  color: #807D7E;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
 
 .delivery-info {}
 
@@ -430,13 +573,51 @@ body {
 
 .payment-block__radio {}
 
-.credit-cards {}
+.credit-cards {
+  display: flex;
+  gap: 20px;
+}
 
 .credit-card {}
 
 .credit-icon {}
 
-.cards-info {}
+.cards-info {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 28px;
+  margin: 0 -15px;
+}
+
+.cards-info__item {
+  flex: 1 1 50%;
+  padding: 0 15px;
+}
+
+.cards-info__input {
+  padding: 16px 20px;
+  border: 1px solid #3C4242;
+}
+
+.cards-info__item {
+  color: #807D7E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cards-info__password {
+  position: relative;
+}
+
+.code-icon {
+  position: absolute;
+  top: 16px;
+  right: 35px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
 
 .form__input--border {}
 
