@@ -24,8 +24,7 @@ body {
   flex-grow: 1;
 }
 
-.container,
-[class*="-container"] {
+[class*="__container"] {
   margin: 0 auto;
   padding: 15px;
 }
@@ -93,7 +92,7 @@ body {
 
 /* Layouts */
 
-.form-container {
+.main__container {
   max-width: 1470px;
 }
 
@@ -324,7 +323,7 @@ body {
   border: 1px solid #b3065c;
 } */
 
-.checkout-container {
+.layouts__container {
   max-width: 870px;
 }
 

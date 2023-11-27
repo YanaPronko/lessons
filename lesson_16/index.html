@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="wrapper">
-      <header class="header container">
+      <header class="header wrapper__container">
         <h2 class="sub-heading header__sub-heading">Header</h2>
         <ul class="list header__list">
           <li class="list__item">
@@ -22,58 +22,227 @@
         </ul>
       </header>
       <main class="main">
-        <div class="container">
+        <div class="main__container">
           <h1 class="heading">TRAINING</h1>
           <div class="box">
-            <h3>Background</h3>
-            <div class="color"></div>
-            <div class="img"></div>
-            <div class="linear-gradient"></div>
-            <div class="radial-gradient"></div>
+            <h3>Text Input</h3>
+            <form action="#" method="GET" enctype="multipart/form-data" >
+              <label>Simple:
+                <input type="text" class="input">
+              </label>
+              <label>With placeholder:
+                <input type="text" placeholder="INPUT" class="input">
+              </label>
+              <label>With autocomplete:
+                <input type="text" placeholder="INPUT" autocomplete class="input">
+              </label>
+              <label>Without autocomplete:
+                <input type="text" placeholder="INPUT" autocomplete="off" class="input">
+              </label>
+              <label>With required:
+                <input type="text" placeholder="INPUT" autocomplete required class="input">
+              </label>
+              <label>With min and max length:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" class="input">
+              </label>
+              <label>With value:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" class="input">
+              </label>
+              <label>With tabindex 1:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" tabindex="1" class="input">
+              </label>
+              <label>With tabindex 0:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" tabindex="0" class="input">
+              </label>
+              <label>With tabindex -1:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" tabindex="0" class="input">
+              </label>
+              <label>With tabindex 2:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" tabindex="0" class="input">
+              </label>
+              <label>Disabled:
+                <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" disabled class="input">
+              </label>
+              <label for="01">With label with attribute 'for':</label>
+              <input id="01" type="text" placeholder="INPUT" minlength="3" maxlength="8"  value="Name" disabled class="input">
+            </form>
+            <button type="submit">Send</button>
           </div>
           <div class="box">
-            <h3>Repeat</h3>
-            <div class="no-repeat"></div>
-            <div class="repeat"></div>
-            <div class="repeat-x"></div>
-            <div class="repeat-y"></div>
-            <div class="space"></div>
-            <div class="round"></div>
+            <h3>Input with type number</h3>
+            <form action="#" method="GET" enctype="multipart/form-data">
+              <label>Simple:
+                <input type="number" class="input">
+              </label>
+              <label>With placeholder:
+                <input type="number" placeholder="Age" class="input">
+              </label>
+              <label>With autocomplete:
+                <input type="number" placeholder="Age" autocomplete class="input">
+              </label>
+              <label>Without autocomplete:
+                <input type="number" placeholder="Age" autocomplete="off" class="input">
+              </label>
+              <label>With required:
+                <input type="number" placeholder="Age" autocomplete required class="input">
+              </label>
+              <label>With min and max:
+                <input type="number" placeholder="Age" min="18" max="100" class="input">
+              </label>
+              <label>With value:
+                <input type="number" placeholder="Age" value="18" class="input">
+              </label>
+              <label>With invalid style:
+                <input type="number" placeholder="Age" value="18" min="18" max="100" class="input">
+              </label>
+              <label>With readonly:
+                <input type="number" placeholder="Age" readonly value="18" min="18" max="100" class="input">
+              </label>
+              <label>With step:
+                <input type="number" placeholder="Age" step="3" readonly value="18" min="18" max="100" class="input">
+              </label>
+              <label>Decimal:
+                <input type="number" placeholder="Age" step="3" readonly value="18" min="18" max="100" class="input">
+              </label>
+              <button type="submit">Send</button>
+            </form>
           </div>
           <div class="box">
-            <h3>Position</h3>
-            <div class="center"></div>
-            <div class="top"></div>
-            <div class="bottom"></div>
-            <div class="one-value"></div>
-            <div class="some"></div>
+            <h3>Input with type Email</h3>
+            <form action="#" method="GET" enctype="multipart/form-data">
+              <label>Simple:
+                <input type="email" class="input">
+              </label>
+              <label>With placeholder:
+                <input type="email" placeholder="E-mail" class="input">
+              </label>
+              <label>Multiple email:
+                <input type="email" placeholder="E-mail" multiple class="input">
+              </label>
+              <label>Without autocomplete:
+                <input type="email" placeholder="E-mail" autocomplete="off" class="input">
+              </label>
+              <label>With required:
+                <input type="email" placeholder="E-mail" autocomplete required class="input">
+              </label>
+              <label>With minlength and maxlength:
+                <input type="email" placeholder="E-mail" minlength="2" maxlength="50" class="input">
+              </label>
+              <label>With value:
+                <input type="email" placeholder="E-mail" value="yaniaR@tut.by" class="input">
+              </label>
+              <label>With pattern:
+                <input type="email" placeholder="E-mail" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                  class="input">
+              </label>
+              <button type="submit">Send</button>
+            </form>
           </div>
-          <div class="box">
-            <h3>Size</h3>
-            <div class="px"></div>
-            <div class="percent"></div>
-            <div class="width"></div>
-            <div class="height"></div>
-            <div class="cover"></div>
-            <div class="contain"></div>
-          </div>
-          <div class="box">
-            <h3>Attachment</h3>
-            <div class="scroll"></div>
-            <div class="fixed"></div>
-          </div>
-          <div class="box">
-            <h3>Universal</h3>
-            <div class="universal-img"></div>
-            <div class="universal-gradient"></div>
-            <div class="universal-some"></div>
-          </div>
-          <div class="box">
-            <h3>Multi background</h3>
-            <div class="multi-img"></div>
-            <div class="multi-gradient"></div>
-            <div class="multi-some"></div>
-          </div>
+        </div>
+        <div class="box">
+          <h3>Input with type Tel</h3>
+          <form action="#" method="GET" enctype="multipart/form-data">
+            <label>Simple:
+              <input type="tel" class="input">
+            </label>
+            <label>With placeholder:
+              <input type="tel" placeholder="Phone" class="input">
+            </label>
+            <label>With required:
+              <input type="tel" placeholder="Phone" autocomplete required class="input">
+            </label>
+            <label>With minlength and maxlength:
+              <input type="tel" placeholder="Phone" minlength="5" maxlength="50" class="input">
+            </label>
+            <label>With pattern and title:
+              <input type="tel" placeholder="Phone" pattern="^\+\d{3}\(\d{2}\)-\d{3}-\d{2}-\d{2}$" class="input" title="+375(29)-777-71-71">
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="box">
+          <h3>Input with type Date</h3>
+          <form action="#" method="GET" enctype="multipart/form-data">
+            <label>Simple:
+              <input type="date" class="input">
+            </label>
+            <label>With max and min:
+              <input type="date" min="30-11-2023" max="31-12-2023" class="input">
+            </label>
+            <label>With required:
+              <input type="date" required class="input">
+            </label>
+            <label>With type month:
+              <input type="month" class="input">
+            </label>
+            <label>With type week:
+              <input type="week" class="input">
+            </label>
+            <label>With type datetime-local:
+              <input type="datetime-local" class="input">
+            </label>
+            <label>With type time:
+              <input type="time" class="input">
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="box">
+          <h3>Input with type checkbox</h3>
+          <form action="#" method="GET" enctype="multipart/form-data">
+            <label>Simple:
+              <input type="checkbox" class="input">
+            </label>
+            <label>With value:
+              <input type="checkbox" value="value" class="input">
+            </label>
+            <label>With required:
+              <input type="checkbox" required class="input">
+            </label>
+            <label>With attribute checked:
+              <input type="checkbox" checked class="input">
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="box">
+          <h3>Input with type radio</h3>
+          <form action="#" method="GET" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Choose your favorite fruit</legend>
+              <label>Banana
+                <input type="radio" name="fruit" value="banana" class="input">
+              </label>
+              <label>Apple
+                <input type="radio" name="fruit" value="apple" class="input">
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Choose your favorite sport</legend>
+              <label>Volleyball
+                <input type="radio" name="sport" value="volleyball" checked lass="input">
+              </label>
+              <label>football:
+                <input type="radio" name="sport" value="football"  required class="input">
+              </label>
+            </fieldset>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="box">
+          <h3>Input with type password</h3>
+          <form action="#" method="GET" enctype="multipart/form-data">
+            <label>Simple:
+              <input type="password" name="password" placeholder="Password" class="input">
+            </label>
+            <label>With minlength:
+              <input type="password" minlength="8" placeholder="Password" class="input">
+            </label>
+              <label>With pattern and title:
+                <input type="password" pattern="((?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,20})" placeholder="Password" title="Maust be 1 digit " class="input">
+              </label>
+            <button type="submit">Send</button>
+          </form>
         </div>
     </main>
     <footer class="footer container">
