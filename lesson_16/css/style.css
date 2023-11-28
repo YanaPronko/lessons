@@ -29,6 +29,53 @@ body {
   padding: 15px;
 }
 
+.boxes-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.box {
+  outline: 5px solid #000000;
+}
+
+.box > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.box form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.box .input {
+  max-width: 50%;
+  border: 1px solid #000000;
+}
+
+.box button {
+  background: #7c3a3a;
+  border-radius: 3px;
+  padding: 10px;
+  max-width: 50%;
+}
+.box .input::placeholder {
+  color: #948f8f;
+}
+
+.box .input:disabled {
+  background: rgba(148, 143, 143, 0.49)
+}
+
+.box .input:invalid {
+  border: 5px soilid red;
+}
+
 .header,
 .footer {
   width: 100%;
@@ -150,14 +197,14 @@ body {
   padding: 0 21px;
 }
 
-.form__input {
+.item-form__input {
   width: 100%;
   padding: 17px 22px;
   border-radius: 8px;
   background: #F6F6F6;
 }
 
-.form__input::placeholder {
+.item-form__input::placeholder {
   color: #807D7E;
   text-align: left;
   font-size: 16px;
@@ -166,35 +213,35 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.form__input:focus {
+.item-form__input:focus {
   outline: 1px solid #8A33FD;
 }
 
-.form__input:focus::placeholder {
+.item-form__input:focus::placeholder {
   opacity: 0;
 }
 
-.form__input--textarea {
+.item-form__input--textarea {
   flex: 0 1 100%;
   min-height: 149px;
   resize: vertical;
   line-height: 1.5;
 }
 
-.form__item--checkbox {
+.item-form--checkbox {
   position: relative;
   padding: 0;
 }
 
-.form__item--checkbox:not(:last-child) {
+.item-form--checkbox:not(:last-child) {
   margin-bottom: 14px;
 }
 
-.form__item--checkbox.form__item--margin{
+.item-form--checkbox.form__item--margin{
   margin-bottom: 61px;
 }
 
-.form__input--checkbox {
+.item-form__input--checkbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -295,7 +342,7 @@ body {
   background: url('../img/chevron.svg') 95% 50% / 25px 25px no-repeat, #F6F6F6;
 }
 
-.form__iput--select {
+.item-form__iput--select {
   position: relative;
 }
 
@@ -315,13 +362,7 @@ body {
   line-height: 1.2;
 }
 
-/* .select::after {
-  content: "";
-  flex: 0 0 22px;
-  width: 22px;
-  height: 22px;
-  border: 1px solid #b3065c;
-} */
+/* Checkout-form */
 
 .layouts__container {
   max-width: 870px;
@@ -332,18 +373,18 @@ body {
 }
 
 .checkout-form > *:not(:last-child)  {
-  border-bottom: 5px solid #EDEEF2;
+  border-bottom: 1px solid #EDEEF2;
 }
 
 .first-group {
   padding-bottom: 32px;
 }
 
-.ckeckout__title-block > *:not(:last-child) {
+.checkout__title-block > *:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.ckeckout__title-block:not(:last-child) {
+.checkout__title-block:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -361,12 +402,7 @@ body {
   background: #8A33FD;
 }
 
-.subtitle {}
-
-.form {}
-
-
-.checkout-form__inputs-wrap {
+.first-group__wrap {
   display: flex;
   flex-wrap: wrap;
   row-gap: 25px;
@@ -382,10 +418,6 @@ body {
   padding: 0 19px;
 }
 
-.form__label {}
-
-.form__input {}
-
 .form__inputs-wrap--three {
   margin: 0 -16px;
 }
@@ -398,8 +430,6 @@ body {
   flex: 1 1 33.33%;
   padding: 0 16px;
 }
-
-.select {}
 
 .checkout-form__item--one {
   max-width: 50%;
@@ -437,7 +467,7 @@ body {
 .group__item > *:not(:last-child) {
   margin-bottom: 25px;
   padding-bottom: 25px;
-  border-bottom: 5px solid #BEBCBD;
+  border-bottom: 1px solid #BEBCBD;
 }
 
 .adress-block__item {
@@ -470,7 +500,6 @@ body {
 .group__subtitle-block:not(:last-child) {
   margin-bottom: 30px;
 }
-
 
 .adress-block__radio {
   position: relative;
@@ -533,8 +562,6 @@ body {
   margin-bottom: 30px;
 }
 
-
-
 .shipping-block .group__label {
   margin-bottom: 8px;
 }
@@ -552,34 +579,10 @@ body {
   line-height: 1.2;
 }
 
-
-
-.delivery-info {}
-
-.delivery-info__date {}
-
-.fourth-level-title {}
-
-.delivery-info__charge {}
-
-.delivery-info__subtitles {}
-
-.delivery-info__price {}
-
-.payment-block {}
-
-.payment-block__group {}
-
-.payment-block__radio {}
-
 .credit-cards {
   display: flex;
   gap: 20px;
 }
-
-.credit-card {}
-
-.credit-icon {}
 
 .cards-info {
   display: flex;
@@ -605,7 +608,7 @@ body {
   line-height: 1.2;
 }
 
-.cards-info__password {
+.cards-info__item--password {
   position: relative;
 }
 
@@ -617,7 +620,3 @@ body {
   height: 20px;
   z-index: 1;
 }
-
-.form__input--border {}
-
-.code-icon {}
