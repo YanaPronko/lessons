@@ -76,6 +76,33 @@ body {
   border: 5px soilid red;
 }
 
+.box select {
+  max-width: 50%;
+  min-height: 30px;
+}
+
+.box textarea {
+  resize: vertical;
+  max-width: 50%;
+}
+
+.box progress {
+  appearance: none;
+}
+
+::-webkit-progress-inner-element {
+  border: 2px solid #9e1515;
+  border-radius: 2px;
+}
+
+::-webkit-progress-value {
+  background: #9e1515;
+}
+
+::-webkit-progress-bar {
+  background: #fff;
+}
+
 .header,
 .footer {
   width: 100%;
