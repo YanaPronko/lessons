@@ -169,8 +169,29 @@ body {
   justify-content: space-evenly;
 }
 
+.dir-col-stretch {
+  align-items: stretch;
+}
+
+.dir-col-align-end {
+  align-items: flex-end;
+}
+
+.dir-col-align-start {
+  align-items: flex-start;
+}
+
+.dir-col-align-center {
+  align-items: center;
+}
+
 .dir-col-reverse {
   flex-direction: column-reverse;
+}
+
+.dir-col-reverse.fl-end {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
 }
 
 .dir-row {
