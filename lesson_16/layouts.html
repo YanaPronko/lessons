@@ -79,7 +79,7 @@
                 <label class="label">
                   State*
                   <select name="state" required class="item-form__input select item-form__input--select">
-                    <option selected disabled hidden>State</option>
+                    <option selected disabled hidden value="">State</option>
                     <option>Arizona</option>
                     <option>Washington</option>
                     <option>California</option>
@@ -126,7 +126,7 @@
           <h2 class="title title--decor">Check Out</h2>
           <h3 class="subtitle">Billing Details</h3>
         </div>
-        <form action="#" enctype="multipart/form-data" class="checkout-form form">
+        <form action="#" enctype="multipart/form-data" id="checkout-form" class="checkout-form form">
           <div class="first-group">
             <div class="first-group__wrap">
               <div class="checkout-form__item item-form">
@@ -179,10 +179,10 @@
                 <label class="label">
                   State*
                   <select name="state" required class="item-form__input select item-form__input--select">
-                    <option selected value="" disabled hidden>State</option>
-                    <option>Arizona</option>
-                    <option>Washington</option>
-                    <option>California</option>
+                    <option selected disabled hidden value="">State</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Washington">Washington</option>
+                    <option value="California">California</option>
                   </select>
                 </label>
               </div>
@@ -284,8 +284,13 @@
                         class="item-form__input cards-info__input">
                     </div>
                     <div class="cards-info__item item-form">
-                      <input name="card-date" type="month" placeholder="Expiration date (MM/YY)"
-                        class="item-form__input cards-info__input">
+                      <input
+                        name="card-date"
+                        type="text"
+                        placeholder="Expiration date (MM/YY)"
+                        class="item-form__input cards-info__input"
+                        onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
                     </div>
                     <div class="cards-info__item cards-info__item--password item-form">
                       <input name="card-code" type="password" placeholder="Security Code"
