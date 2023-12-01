@@ -1,0 +1,155 @@
+/* Fonts */
+@import url('fonts.css');
+
+/* Reset styles */
+
+@import url('reset.css');
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  max-width: 1470px;
+  padding: 0 15px;
+}
+
+.header,
+.footer {
+  width: 100%;
+  background: rgb(232 239 237);
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.header__sub-heading:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.heading:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 20%;
+  margin-left: auto;
+}
+
+.list__link {
+  padding: 10px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.list__link:hover {
+  color: #0e4ad6
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts__list {
+  margin: 0;
+  width: max-content;
+}
+
+/* Layouts */
+
+.goods {
+  padding: 104px 0;
+  background: #FEFBF7;
+}
+
+.goods__container {
+  max-width: 1200px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.products-header {
+  text-align: center;
+}
+
+.goods__header > *:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.goods__header:not(:last-child) {
+  margin-bottom: 88px;
+}
+
+
+.products-header__title {
+  color: #000;
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height:1.24
+}
+
+.products-header__text {}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  row-gap: 20px;
+}
+
+.products__column {
+  padding: 0 15px;
+  /* flex: 1 0 25%; */
+}
+
+.products__item {
+
+}
+
+.item-product {}
+
+.item-product__img {
+
+}
+
+.item-product__name {}
+
+.item-product__price {}

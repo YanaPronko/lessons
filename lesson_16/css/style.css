@@ -72,8 +72,8 @@ body {
   background: rgba(148, 143, 143, 0.49)
 }
 
-.box .input:invalid {
-  border: 5px soilid red;
+.box .input:invalid:not(:required) {
+  border: 5px solid red;
 }
 
 .box select {
