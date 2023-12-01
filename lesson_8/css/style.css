@@ -327,6 +327,7 @@ footer {
 
 .content-wrapper {
   font-size: 0;
+  margin-bottom: 37px;
 }
 
 .content-wrapper > div{
@@ -348,6 +349,7 @@ footer {
 .left-block {
   margin-right: 21px;
   background: url('../img/left_icon.svg') 32px 32px / 39px 38px no-repeat;
+  border: 1px solid #E3E3E3;
 }
 
 .subtitle {
@@ -361,6 +363,7 @@ footer {
 
 .right-block {
   background: url("../img/right_icon.svg") 32px 32px / 39px 38px no-repeat;
+  border: 1px solid #E3E3E3;
 }
 
 .btn {
@@ -399,8 +402,44 @@ footer {
 }
 
 .card {
-  width: 384px;
-  padding-top: 525px
+  max-width: 384px;
+  width: 100%;
+}
+
+.card-img-1 {
+  height: 501px;
+  margin-bottom: 24px;
+  background: url('../img/card_1.jpg') center / cover no-repeat;
+}
+
+.card-img-2 {
+  height: 501px;
+  margin-bottom: 24px;
+  background: url('../img/card_2.jpg') center / cover no-repeat;
+}
+
+.card-img-3 {
+  height: 501px;
+  margin-bottom: 24px;
+  background: url('../img/card_3.jpg') center / cover no-repeat;
+}
+
+.card-img-4 {
+  height: 501px;
+  margin-bottom: 24px;
+  background: url('../img/card_4.jpg') center / cover no-repeat;
+}
+
+.card-img-5 {
+  height: 501px;
+  margin-bottom: 24px;
+  background: url('../img/card_5.jpg') center / cover no-repeat;
+}
+
+.card-img-6 {
+  height: 501px;
+  margin-bottom: 24px;
+  background: url('../img/card_6.jpg') center / cover no-repeat;
 }
 
 .second-subtitle {
@@ -434,30 +473,18 @@ footer {
 
 .card-1 {
   margin-right: 34px;
-  background: url('../img/card_1.jpg') 0 0 / contain no-repeat;
 }
 
 .card-2 {
   margin-right: 34px;
-  background: url('../img/card_2.jpg') 0 0 / contain no-repeat;
-}
-
-.card-3 {
-  background: url('../img/card_3.jpg') 0 0 / contain no-repeat;
 }
 
 .card-4 {
   margin-right: 34px;
-  background: url('../img/card_4.jpg') 0 0 / contain no-repeat;
 }
 
 .card-5 {
   margin-right: 34px;
-  background: url('../img/card_5.jpg') 0 0 / contain no-repeat;
-}
-
-.card-6 {
-  background: url('../img/card_6.jpg') 0 0 / contain no-repeat;
 }
 
 .third-title-wrapper {
@@ -528,15 +555,25 @@ footer {
 .fourth-container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 183px  0 174px 74px;
   font-family: "Causten", sans-serif;
+  font-size: 0;
+}
+
+.left {
+  display: inline-block;
+  width: 50%;
+  padding: 183px 0 174px 74px;
   color: #FFF;
-  background: url(../img/unsplash_bg.png) 0 0 / contain no-repeat, url('../img/girls_and_man.png') 100% 0 / contain no-repeat;
-  border-radius: 3px;
+  background: url(../img/unsplash_bg.png) center / cover no-repeat;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.text-container {
+  max-width: 466px;
 }
 
 .fourth-title {
-  max-width: 466px;
   margin-bottom: 30px;
   font-family: "Core Sans C", sans-serif;
   font-size: 34px;
@@ -547,7 +584,6 @@ footer {
 }
 
 .fourth-container .text-wrapper p {
-  max-width: 451px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.2;
@@ -556,6 +592,16 @@ footer {
 
 .fourth-container .text-wrapper {
   margin-bottom: 50px;
+}
+
+.right {
+  display: inline-block;
+  width: 50%;
+  height: 656.59px;
+  background: url(../img/girls_and_man.png) center / cover no-repeat;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  vertical-align: top;
 }
 
 .btn-link {

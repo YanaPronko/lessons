@@ -391,6 +391,7 @@ footer {
   letter-spacing: 0.4px;
   color: #807D7E;
 }
+
 .content-wrapper span {
   font-weight: 700;
 }
@@ -446,14 +447,20 @@ footer {
 .first-img-container img {
   margin-left: -10px;
   margin-top: 14px;
+  border-radius: 235px;
+  max-width: 100%;
 }
+
 .second-img-container {
   padding-right: 11px;
   margin-top: -70px;
   vertical-align: top;
+  border-radius: 235px;
 }
 
 .second-img-container img {
   margin-top: 19px;
   margin-left: -11px;
+  max-width: 100%;
+  border-radius: 235px;
 }
