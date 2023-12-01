@@ -597,7 +597,7 @@ footer {
 .right {
   display: inline-block;
   width: 50%;
-  height: 656.59px;
+  min-height: 656.59px;
   background: url(../img/girls_and_man.png) center / cover no-repeat;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
