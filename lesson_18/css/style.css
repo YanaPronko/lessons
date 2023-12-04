@@ -91,6 +91,19 @@ body {
   width: max-content;
 }
 
+
+@media (max-width: 991.98px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contacts__list {
+    flex-direction: column;
+  }
+}
+
 /* Layouts */
 .header {
   position: fixed;
@@ -448,9 +461,9 @@ body {
 
 .hero {
   padding: 198px 0 68px 0;
-  background: #502203;
   flex-grow: 1;
   display: flex;
+  background-color: #502203;
 }
 
 .hero__container {
@@ -459,6 +472,7 @@ body {
   gap: 10px;
   font-family: "Cormorant Infant", serif;
   color: #FFF;
+  align-items: flex-start;
 }
 
 .hero__description {
@@ -507,23 +521,29 @@ body {
 
 .hero__img {
   padding: 20px;
-  width: 36.752137%;
-  flex-basis: 36.752137%; /* 430/1170 */
+  /* width: 36.752137%; */
+  flex-basis: 36.75%;/* 430/1170 */
   flex-shrink: 0;
   border-radius: 215px;
   border: 1px solid #fff;
+}
+
+.hero__img img {
+  width: 100%;
   aspect-ratio: 390 / 554;
   object-fit: cover;
+  border-radius: 215px;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-self: stretch;
   gap: 15px;
 }
 
 .hero__text {
+  flex-grow: 1;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.48;
@@ -574,6 +594,22 @@ body {
   }
 }
 
+@media (min-width: 1350px) {
+  .hero {
+    background: url('../img/hero/left_line.svg') 0 0 no-repeat,
+        url(../img/hero/left_bg.png) 38px 100% no-repeat, #502203;
+  }
+}
+
+@media (min-width: 1550px) {
+  .hero {
+    background: url('../img/hero/left_line.svg') 0 0 no-repeat,
+      url(../img/hero/left_bg.png) 38px 100% no-repeat,
+      url('../img/hero/group_bg.png') 100% 145px no-repeat, #502203;
+
+  }
+}
+
 @media (min-width: 992px) {
   .hero__description {
     flex-basis: 30.25641%; /* 354/1170 */
@@ -583,11 +619,18 @@ body {
   .hero__content {
     flex-basis: calc(100% - (36.752137% + 30.25641%) + 23px);
     padding: 64px 0 183px 23px;
-    transform: translate(8%, 0);
       /* margin-right: -3%; */
   }
 
   .hero__subtitle {
     align-self: flex-end;
+    /* transform: translate(8%, 0); */
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__subtitle {
+    align-self: flex-end;
+    transform: translate(8%, 0);
   }
 }
