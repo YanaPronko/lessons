@@ -507,8 +507,7 @@ body {
 
 .hero__img {
   padding: 20px;
-  width: 100%;
-  /* width: 36.752137%; */
+  width: 36.752137%;
   flex-basis: 36.752137%; /* 430/1170 */
   flex-shrink: 0;
   border-radius: 215px;
