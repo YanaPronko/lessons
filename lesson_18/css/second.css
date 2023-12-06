@@ -285,7 +285,7 @@ body {
   height: 100%;
   min-width: 320px;
   background: rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease;
   z-index: 55;
 }
 
@@ -352,6 +352,8 @@ body {
   border-radius: 5px;
   background: #0E333D;
   text-transform: capitalize;
+  transition: all 0.3s ease;
+
 }
 
 .hero__button--transparent {
@@ -360,6 +362,7 @@ body {
   text-decoration: underline;
   background: transparent;
   text-transform: capitalize;
+  transition: all 0.3s ease;
 }
 
 @media (any-hover: hover) {
