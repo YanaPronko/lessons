@@ -305,7 +305,6 @@ body {
 .hero__container {
   --gap: 86px;
 
-  min-height: 536px;
   display: flex;
   gap: var(--gap);
   font-family: "Inter", sans-serif;
@@ -383,6 +382,7 @@ body {
   flex: 1 1 100%;
   align-items: flex-start;
   gap: var(--gap);
+  min-height: 536px;
 }
 
 .img img {
