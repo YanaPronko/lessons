@@ -269,6 +269,7 @@ body {
 .menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 41px;
 }
 
@@ -341,5 +342,13 @@ body {
 
   .item-product__content {
     text-align: center;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .menu__link {
+    font-size: 20px;
   }
 }
