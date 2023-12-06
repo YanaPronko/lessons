@@ -551,6 +551,14 @@ body {
 }
 
 @media (max-width: 470px) {
+  .logo {
+      font-size: 24px;
+    }
+
+  .actions-header__link {
+    font-size: 18px;
+  }
+
   .hero__title {
     font-size: 48px;
   }
