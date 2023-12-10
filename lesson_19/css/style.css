@@ -103,8 +103,6 @@ body {
 }
 
 /* Layouts */
-.main {}
-
 .sales {
   padding: 130px 0 100px 0;
 }
@@ -118,13 +116,10 @@ body {
 
 .sales__wrapper {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
   grid-template-columns: repeat(auto-fill, minmax(508px, 0.5fr));
   justify-content: center;
   gap: 30px;
 }
-
-.sales__item {}
 
 .card {
   position: relative;
@@ -152,12 +147,14 @@ body {
   font-weight: 800;
   line-height: 1.67;
   letter-spacing: 0.251px;
+  text-transform: capitalize;
 }
 
 .card__title {
   font-size: 34px;
   font-weight: 800;
   line-height: 1.32;
+  text-transform: capitalize;
 }
 
 .card__title:not(:last-child) {
@@ -167,6 +164,7 @@ body {
 .card__text {
   line-height: 1.56;
   letter-spacing: 0.251px;
+  text-transform: uppercase;
 }
 
 .card__text p:not(:last-child) {
@@ -183,6 +181,7 @@ body {
   line-height: 1.5;
   text-decoration: underline;
   transition: all 0.3s ease;
+  text-transform: capitalize;
 }
 
 @media (any-hover: hover) {
@@ -197,12 +196,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  aspect-ratio: 604 / 355;
+  aspect-ratio: 400 / 393;
   object-fit: cover;
   border-radius: 12px;
 }
 
-.new {
+.new,
+.save {
   padding-bottom: 100px;
 }
 
@@ -213,7 +213,7 @@ body {
   color: #3C4242;
 }
 
-.new__title {
+.title {
   display: inline-flex;
   font-size: 34px;
   font-weight: 600;
@@ -221,9 +221,11 @@ body {
   letter-spacing: 0.68px;
   gap: 20px;
   align-items: flex-start;
+  text-transform: capitalize;
+  color: #3C4242;
 }
 
-.new__title::before {
+.title::before {
   content: "";
   width: 6px;
   height: 30px;
@@ -243,11 +245,14 @@ body {
   justify-content: center;
 }
 
-.new__arrow {}
+.new__arrow {
+  flex: 0 0 14px;
+}
 
-.arrow--left {}
-
-.arrow {}
+.arrow {
+  filter: invert(24%) sepia(19%) saturate(148%) hue-rotate(131deg) brightness(98%) contrast(96%);
+  transition: all 0.3s ease;
+}
 
 .cards {
   display: grid;
@@ -271,11 +276,193 @@ body {
   aspect-ratio: 263 / 263;
   object-fit: cover;
   border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.cards__subtitle {}
-.arrow--right {}
+@media (any-hover: hover) {
+  .arrow:hover {
+    filter: invert(25%) sepia(98%) saturate(3621%) hue-rotate(258deg) brightness(98%) contrast(104%);
+  }
 
+  .cards__image:hover {
+    transform: scale(1.1);
+  }
+
+  .cards__link-subtitle:hover {
+    text-decoration: underline;
+  }
+}
+
+.cards__subtitle {
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.save__container {
+  font-family: "Causten", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.save__title:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+
+.save__wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.save__item {
+  position: relative;
+}
+
+.item-save {
+  grid-column: span 2;
+  border-radius: 12px;
+  display: flex;
+}
+
+.item-save:nth-child(1) {
+  padding: 64px 0 64px 20px;
+  color: #FFFFFF;
+}
+
+.item-save:nth-child(1) .item-save__content {
+  max-width: 147px;
+}
+
+.item-save:nth-child(2) {
+  padding: 35px 25px 41px 0;
+  color: #FFFFFF;
+  justify-content: flex-end;
+}
+
+.item-save:nth-child(2) .item-save__content {
+  max-width: 153px;
+  text-align: right;
+}
+
+.item-save:nth-child(1) .item-save__text:not(:last-child),
+.item-save:nth-child(3) .item-save__text:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.item-save:nth-child(2) .item-save__text:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.item-save:nth-child(4) .item-save__text:not(:last-child),
+.item-save:nth-child(5) .item-save__text:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.item-save__arrow {
+  display: block;
+  padding: 5px;
+}
+
+.item-save:nth-child(1) .item-save__arrow {
+  margin: 0 81px 40px 45px;
+}
+
+.item-save:nth-child(2) .item-save__arrow {
+  margin: 0 46px 30px 86px;
+}
+
+.item-save__icon {
+  transition: all 0.3s ease;
+}
+
+.item-save:nth-child(1) .item-save__icon svg,
+.item-save:nth-child(2) .item-save__icon svg {
+  filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(285deg) brightness(108%) contrast(101%);
+  transition: all 0.3s ease;
+}
+
+@media(any-hover: hover) {
+  .item-save:nth-child(1) .item-save__icon:hover,
+  .item-save:nth-child(2) .item-save__icon:hover {
+    filter: invert(45%) sepia(81%) saturate(7494%) hue-rotate(257deg) brightness(100%) contrast(107%);
+  }
+}
+
+.item-save__content {
+  position: relative;
+  z-index: 1;
+}
+
+.item-save__content > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item-save__title {
+  font-family: "Core Sans C", sans-serif;
+  font-size: 28px;
+  line-height: 1.37;
+  letter-spacing: 0.56px;
+}
+
+.item-save:nth-child(2) .item-save__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item-save__label {
+  line-height: 1.2;
+}
+
+.item-save__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.item-save__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.item-save__button {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.item-save:nth-child(1) .item-save__button,
+.item-save:nth-child(2) .item-save__button {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.item-save:nth-child(2) .item-save__button--background {
+  background: #3C4242;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.item-save:nth-child(2) .item-save__button--background:npt(:last-child) {
+  margin-bottom: 28px;
+}
+
+.item-save__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 604 / 355;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
 @media (max-width: 992px) {
   .sales__wrapper {
@@ -291,18 +478,26 @@ body {
   }
 }
 
+/* @media (max-width: 665px) {
+  .new__wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cards {
+    order: 1;
+  }
+
+  .new__arrow--left {
+    order: 2
+  }
+  .new__arrow--right {
+    order: 2
+  }
+} */
 
 @media (max-width: 500px) {
   .sales__wrapper {
     grid-template-columns: minmax(320px, 1fr);
-    /* grid-template-columns:  max-content; */
   }
-
-  /* .sales__container {
-    padding: 0;
-  }
-
-  .card {
-    padding-left: 10px;
-  } */
 }
