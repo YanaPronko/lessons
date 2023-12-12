@@ -276,25 +276,24 @@
                   </div>
                   <div class="cards-info">
                     <div class="cards-info__item item-form">
-                      <input name="card-number" type="number" placeholder="Card number"
-                        class="item-form__input cards-info__input">
+                      <input name="card-number" type="number" placeholder="Card number" class="item-form__input cards-info__input" required minlength="13" maxlength="19">
                     </div>
                     <div class="cards-info__item item-form">
-                      <input name="card-name" type="text" placeholder="Name of card"
-                        class="item-form__input cards-info__input">
+                      <input name="card-name" type="text" placeholder="Name of card" class="item-form__input cards-info__input" required>
                     </div>
                     <div class="cards-info__item item-form">
                       <input
                         name="card-date"
                         type="text"
+                        required
                         placeholder="Expiration date (MM/YY)"
                         class="item-form__input cards-info__input"
-                        onfocus="(this.type='date')"
-                        onblur="(this.type='text')">
+                        pattern="^(0[1-9]|1[0-2]|)(\/\d{2}|\/)$"
+                        maxlength="5"
+                        >
                     </div>
                     <div class="cards-info__item cards-info__item--password item-form">
-                      <input name="card-code" type="password" placeholder="Security Code"
-                        class="item-form__input cards-info__input">
+                      <input name="card-code" type="password" placeholder="Security Code" class="item-form__input cards-info__input" minlength="3" maxlength="4">
                       <img src="img/cards/eye.svg" alt="eye" class="code-icon">
                     </div>
                   </div>
@@ -309,7 +308,7 @@
               </div>
               <div class="payment-block__radio radio-item">
                 <input id="paypol" name="payment-radio" value="paypol" type="radio" class="radio-item__input radio">
-                <label for="paypol" class="radio-item__label group__label">Paypol</label>
+                <label for="paypol" class="radio-item__label group__label">PayPal</label>
               </div>
             </fieldset>
           </div>

@@ -322,6 +322,7 @@ body {
 }
 
 .btn {
+  flex-shrink: 0;
   padding: 12px 40px;
   border-radius: 8px;
   text-align: center;
@@ -404,6 +405,9 @@ body {
 }
 
 .first-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
   padding-bottom: 32px;
 }
 
@@ -418,13 +422,14 @@ body {
 .title--decor {
   display: inline-flex;
   gap: 15px;
-  align-items:center;
+  align-items:flex-start;
 }
 
 .title--decor::before {
   content: '';
   width: 6px;
   height: 28px;
+  flex: 0 0 6px;
   border-radius: 10px;
   background: #8A33FD;
 }
@@ -463,7 +468,7 @@ body {
 }
 
 .checkout-form__item--one:not(:last-child) {
-  margin: 0 -19px 40px;
+  margin: 0 -19px 15px;
 }
 
 .checkout-form__save-block:not(:last-child) {
@@ -529,6 +534,10 @@ body {
 }
 
 .adress-block__radio {
+  position: relative;
+}
+
+.radio-item {
   position: relative;
 }
 
