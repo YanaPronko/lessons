@@ -26,344 +26,364 @@
       <div class="main__container boxes-wrapper">
         <h1 class="heading">TRAINING</h1>
         <div class="box">
-          <h3>Text Input</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="text" class="input">
-            </label>
-            <label>With placeholder:
-              <input type="text" placeholder="INPUT" class="input">
-            </label>
-            <label>With autocomplete:
-              <input type="text" placeholder="INPUT" autocomplete="on" class="input">
-            </label>
-            <label>With autofocus:
-              <input type="text" placeholder="INPUT" autofocus class="input">
-            </label>
-            <label>Without autocomplete:
-              <input type="text" placeholder="INPUT" autocomplete="off" class="input">
-            </label>
-            <label>With required:
-              <input type="text" placeholder="INPUT" autocomplete required class="input">
-            </label>
-            <label>With min and max length:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" class="input">
-            </label>
-            <label>With value:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" class="input">
-            </label>
-            <label>With tabindex 1:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" value="Name" tabindex="1"
-                class="input">
-            </label>
-            <label>With tabindex 2:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" tabindex="2" class="input">
-            </label>
-            <label>With tabindex 0:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" tabindex="0" class="input">
-            </label>
-            <label>With tabindex -1:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" tabindex="-1" class="input">
-            </label>
-            <label>Disabled:
-              <input type="text" placeholder="INPUT" minlength="3" maxlength="8" disabled class="input">
-            </label>
-            <label for="01">With label with attribute 'for':</label>
-            <input id="01" type="text" placeholder="INPUT" minlength="3" maxlength="8" class="input">
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container</h3>
+          <div class="grid-container">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type number</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="number" class="input">
-            </label>
-            <label>With placeholder:
-              <input type="number" placeholder="Age" class="input">
-            </label>
-            <label>With autocomplete:
-              <input type="number" placeholder="Age" autocomplete="on" class="input">
-            </label>
-            <label>Without autocomplete:
-              <input type="number" placeholder="Age" autocomplete="off" class="input">
-            </label>
-            <label>With required:
-              <input type="number" placeholder="Age" autocomplete required class="input">
-            </label>
-            <label>With min and max:
-              <input type="number" placeholder="Age" min="18" max="100" class="input">
-            </label>
-            <label>With value:
-              <input type="number" placeholder="Age" value="18" class="input">
-            </label>
-            <label>With invalid style:
-              <input type="number" placeholder="Age" min="18" max="100" class="input">
-            </label>
-            <label>With readonly:
-              <input type="number" placeholder="Age" readonly min="18" max="100" class="input">
-            </label>
-            <label>With step:
-              <input type="number" placeholder="Age" step="3" class="input">
-            </label>
-            <label>Decimal:
-              <input type="number" placeholder="Age" step="0.01" min="18" max="100" class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with repeat</h3>
+          <div class="grid-container grid-container--repeat">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type Email</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="email" autocomplete="on" name="email" class="input">
-            </label>
-            <label>With placeholder:
-              <input type="email" placeholder="E-mail" class="input">
-            </label>
-            <label>Multiple email:
-              <input type="email" placeholder="E-mail" multiple class="input">
-            </label>
-            <label>Without autocomplete:
-              <input type="email" placeholder="E-mail" autocomplete="off" class="input">
-            </label>
-            <label>With required:
-              <input type="email" placeholder="E-mail" autocomplete required class="input">
-            </label>
-            <label>With minlength and maxlength:
-              <input type="email" placeholder="E-mail" minlength="5" maxlength="50" class="input">
-            </label>
-            <label>With value:
-              <input type="email" placeholder="E-mail" value="yaniaR@tut.by" class="input">
-            </label>
-            <label>With pattern:
-              <input type="email" placeholder="E-mail"
-                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with repeat and minmax</h3>
+          <div class="grid-container grid-container--minmax">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type Tel</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="tel" class="input">
-            </label>
-            <label>With placeholder:
-              <input type="tel" placeholder="Phone" class="input">
-            </label>
-            <label>With required:
-              <input type="tel" placeholder="Phone" autocomplete required class="input">
-            </label>
-            <label>With minlength and maxlength:
-              <input type="tel" placeholder="Phone" minlength="5" maxlength="50" class="input">
-            </label>
-            <label>With pattern and title:
-              <input type="tel" placeholder="Phone" pattern="^\+\d{3}\(\d{2}\)-\d{3}-\d{2}-\d{2}$" class="input"
-                title="+375(29)-777-71-71">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with grid-auto-flow</h3>
+          <div class="grid-container grid-container--flow">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+          <div class="grid-container grid-container--flow-row">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type Date</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="date" class="input">
-            </label>
-            <label>With max and min:
-              <input type="date" min="2023-11-30" max="2023-12-31" class="input">
-            </label>
-            <label>With required:
-              <input type="date" required class="input">
-            </label>
-            <label>With type month:
-              <input type="month" class="input">
-            </label>
-            <label>With type week:
-              <input type="week" class="input">
-            </label>
-            <label>With type datetime-local:
-              <input type="datetime-local" class="input">
-            </label>
-            <label>With type time:
-              <input type="time" class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with autofit</h3>
+          <div class="grid-container grid-container--autofit">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2 Lorem ipsum dolor sit amet ipsum dolor sit amet</div>
+            <div class="grid-container__item">3 Lorem ipsum dolor sit amet ipsum dolor sit amet</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type checkbox</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="checkbox" class="input">
-            </label>
-            <label>With value:
-              <input type="checkbox" value="value" class="input">
-            </label>
-            <label>With required:
-              <input type="checkbox" required class="input">
-            </label>
-            <label>With attribute checked:
-              <input type="checkbox" checked class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with autofill</h3>
+          <div class="grid-container grid-container--autofill">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2 Lorem ipsum dolor sit amet ipsum dolor sit amet</div>
+            <div class="grid-container__item">3 Lorem ipsum dolor sit amet ipsum dolor sit amet</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type radio</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <fieldset>
-              <legend>Choose your favorite fruit</legend>
-              <label>Banana
-                <input type="radio" name="fruit" value="banana" class="input">
-              </label>
-              <label>Apple
-                <input type="radio" name="fruit" value="apple" class="input">
-              </label>
-            </fieldset>
-            <fieldset>
-              <legend>Choose your favorite sport</legend>
-              <label>Volleyball
-                <input type="radio" name="sport" value="volleyball" checked lass="input">
-              </label>
-              <label>football:
-                <input type="radio" name="sport" value="football" required class="input">
-              </label>
-            </fieldset>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-items: start</h3>
+          <div class="grid-container grid-container--jis">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type password</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="password" name="password" placeholder="Password" class="input">
-            </label>
-            <label>With minlength:
-              <input type="password" minlength="8" placeholder="Password" class="input">
-            </label>
-            <label>With pattern and title:
-              <input type="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}" placeholder="Password"
-                title="Must be 1 digit, 1 capitalize and min 6 chars" class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-items: end</h3>
+          <div class="grid-container grid-container--jie">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type color</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="color" class="input">
-            </label>
-            <label>With value:
-              <input type="color" value="#ff0000" class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-items: center</h3>
+          <div class="grid-container grid-container--jic">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type file</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="file" class="input">
-            </label>
-            <label>With accept:
-              <input type="file" accept=".png, .jpg, .jpeg" class="input">
-            </label>
-            <label>With multiple:
-              <input type="file" multiple class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-content: end</h3>
+          <div class="grid-container grid-container--jce">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type range</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="range" class="input">
-            </label>
-            <label>With min and max:
-              <input type="range" min="5" max="25" class="input">
-            </label>
-            <label>With step 5:
-              <input type="range" min="5" max="25" step="5" class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-content: center</h3>
+          <div class="grid-container grid-container--jcc">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type search</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="search" class="input">
-            </label>
-            <label>With placeholder:
-              <input type="search" placeholder="Search..." class="input">
-            </label>
-            <label>With maxlength:
-              <input type="search" maxlength="15" placeholder="Search..." class="input">
-            </label>
-            <label>With spellcheck:
-              <input type="search" spellcheck="true" placeholder="Search..." class="input">
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-content: space-between</h3>
+          <div class="grid-container grid-container--jcsb">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Input with type url</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label>Simple:
-              <input type="url" class="input">
-            </label>
-            <label>With placeholder:
-              <input type="url" placeholder="https://example.com" class="input">
-            </label>
-            <label>With maxlength:
-              <input type="url" maxlength="25" placeholder="https://example.com" class="input">
-            </label>
-            <label>With pattern:
-              <input type="url" pattern="https://.*" placeholder="https://example.com" class="input">
-            </label>
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
-            <button type="button">Button</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-content: space-around</h3>
+          <div class="grid-container grid-container--jcsa">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Select</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label class="label">
-              State*
-              <select name="state" required>
-                <option selected disabled hidden>State</option>
-                <option>Arizona</option>
-                <option>Washington</option>
-                <option>California</option>
-              </select>
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with justify-content: space-evenly</h3>
+          <div class="grid-container grid-container--jcse">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Textarea</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label class="label">
-              Message
-              <textarea name="message" id="message" cols="30" rows="5" placeholder="Write something ..."></textarea>
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with align-items: start</h3>
+          <div class="grid-container grid-container--ais">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
         </div>
         <div class="box">
-          <h3>Progress</h3>
-          <form action="#" method="GET" enctype="multipart/form-data">
-            <label class="label">
-              Progress
-              <progress max="100" value="85">85%</progress>
-            </label>
-            <button type="submit">Send</button>
-          </form>
+          <h3 class="box__title">GRID-Container with align-items: end</h3>
+          <div class="grid-container grid-container--aie">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with align-items: center</h3>
+          <div class="grid-container grid-container--aic">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with align-content: center</h3>
+          <div class="grid-container grid-container--acc">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with align-content: end</h3>
+          <div class="grid-container grid-container--ace">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with align-content: space-around</h3>
+          <div class="grid-container grid-container--acsa">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with align-content: space-between</h3>
+          <div class="grid-container grid-container--acsb">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with align-content: space-evenly</h3>
+          <div class="grid-container grid-container--acse">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with column start and end</h3>
+          <div class="grid-container grid-container--repeat">
+            <div class="grid-container__item">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item grid-container__item--c2">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with row start and end</h3>
+          <div class="grid-container grid-container--repeat">
+            <div class="grid-container__item grid-container__item--r2">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with row start and end and Dense</h3>
+          <div class="grid-container grid-container--dense">
+            <div class="grid-container__item grid-container__item--r2">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item grid-container__item--c2">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with row start and span</h3>
+          <div class="grid-container grid-container--repeat">
+            <div class="grid-container__item grid-container__item--rs">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container with column start and span</h3>
+          <div class="grid-container grid-container--repeat">
+            <div class="grid-container__item grid-container__item--cs">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item">2</div>
+            <div class="grid-container__item">3</div>
+            <div class="grid-container__item">4</div>
+            <div class="grid-container__item">5</div>
+            <div class="grid-container__item">6</div>
+            <div class="grid-container__item">7</div>
+            <div class="grid-container__item">8</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="box__title">GRID-Container - grid-area</h3>
+          <div class="grid-container grid-container--area">
+            <div class="grid-container__item grid-header">1 Lorem ipsum dolor sit amet ipsum dolor sit amet </div>
+            <div class="grid-container__item grid-header">2</div>
+            <div class="grid-container__item grid-content">3</div>
+            <div class="grid-container__item grid-content">4</div>
+            <div class="grid-container__item grid-content">5</div>
+            <div class="grid-container__item grid-sidebar">6</div>
+            <div class="grid-container__item grid-footer">7</div>
+            <div class="grid-container__item grid-footer">8</div>
+          </div>
         </div>
       </div>
     </main>
