@@ -32,6 +32,7 @@ body {
 
 .header,
 .footer {
+  padding: 10px 0;
   width: 100%;
   background: rgb(232 239 237);
 }
@@ -147,6 +148,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 17px;
+}
+
+.item-product--border {
+  border-radius: 5px;
+}
+
+.item-product--border > img {
+  border-radius: 5px;
 }
 
 .item-product__content > *:not(:last-child) {

@@ -33,6 +33,7 @@ body {
 .header,
 .footer {
   width: 100%;
+  padding: 10px 0;
   background: rgb(232 239 237);
 }
 
