@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500&display=swap");
+@font-face {
+  font-family: "Mintaka";
+  src: url("../fonts/Mintaka.woff2") format("woff2"), url("../fonts/Mintaka.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Light.woff2") format("woff2"), url("../fonts/Causten-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Regular.woff2") format("woff2"), url("../fonts/Causten-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Medium.woff2") format("woff2"), url("../fonts/Causten-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-SemiBold.woff2") format("woff2"), url("../fonts/Causten-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Bold.woff2") format("woff2"), url("../fonts/Causten-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-45Regular.woff2") format("woff2"), url("../fonts/CoreSansC-45Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts//CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/CoreSansC-55Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-85Heavy.woff2") format("woff2"), url("../fonts/CoreSansC-85Heavy.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body,
+html {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search, .header__actions, .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: "Causten", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #807D7E;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: clip;
+}
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 0 0.9375rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 6.75rem;
+  padding: 0.3125rem 0;
+  background-color: #ffffff;
+  z-index: 50;
+}
+.header__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+  width: 100%;
+}
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4.75rem;
+}
+.header__actions {
+  gap: 0.75rem;
+}
+
+.logo {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5.6875rem;
+          flex: 0 0 5.6875rem;
+  z-index: 58;
+}
+.logo__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 91 / 45;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2.5rem;
+     -moz-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  row-gap: 0.625rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.menu__link {
+  padding: 0.3125rem;
+  color: #807D7E;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menu__link--active {
+  color: #3C4242;
+  font-weight: 700;
+}
+@media (any-hover: hover) {
+  .menu__link:hover {
+    color: #8A33FD;
+    text-decoration: underline;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: tor(50);
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 20rem;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 55;
+}
+
+.search {
+  padding: 0.75rem 1.25rem;
+  gap: 12px;
+  background: #F6F6F6;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.search__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #807D7E;
+}
+.search__input {
+  width: calc(100% - 32px);
+  background: #F6F6F6;
+}
+.search__input::-webkit-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #807D7E;
+}
+.search__input::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #807D7E;
+}
+.search__input:-ms-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #807D7E;
+}
+.search__input::-ms-input-placeholder {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #807D7E;
+}
+.search__input::placeholder {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #807D7E;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: #807D7E;
+}
+
+.actions-header {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  z-index: 58;
+}
+.actions-header__link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background: #F6F6F6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (any-hover: hover) {
+  .actions-header__link:hover .icon {
+    stroke: #8A33FD;
+  }
+}
