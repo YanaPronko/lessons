@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Euphoria</title>
 </head>
@@ -66,6 +67,37 @@
       </div>
     </header>
     <main class="main">
+      <section class="slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide__content">
+                <h3 class="label">T-shirt / Tops</h3>
+                <h1 class="title">Summer Value Pack</h1>
+                <div class="description">cool / colorful / comfy</div>
+                <button class="btn">Shop Now</button>
+              </div>
+              <img src="img/slider/01.webp" alt="woman" class="slide__image">
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__content">
+                <h3 class="label">T-shirt 2 / Tops 2</h3>
+                <h1 class="title">Summer Value Pack</h1>
+                <div class="description">cool / colorful / comfy</div>
+                <button class="btn">Shop Now</button>
+              </div>
+              <img src="img/slider/01.webp" alt="woman" class="slide__image">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
       <section class="sales">
         <div class="sales__container">
           <div class="sales__wrapper">
@@ -247,6 +279,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

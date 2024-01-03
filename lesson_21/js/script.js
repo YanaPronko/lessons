@@ -1,6 +1,7 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+
   const isMobile = window.matchMedia(
     '(pointer: coarse) and (max-width: 1100px)'
   ).matches;
@@ -37,4 +38,22 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
+
+  // Swiper
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameter
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 });
