@@ -1,0 +1,84 @@
+.sales {
+  padding-top: toRem(130);
+  &__container {
+    font-family: "Core Sans C", sans-serif;
+    font-weight: 500;
+    font-size: toRem(16);
+    color: $light-color;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(toRem(400), 1fr));
+    justify-content: center;
+    gap: toRem(30);
+  }
+}
+
+.card {
+  position: relative;
+  padding: toRem(67) 0 toRem(80) toRem(28);
+  border-radius: toRem(12);
+  &--right {
+    padding: toRem(57) 0 toRem(55) toRem(30);
+  }
+  &__content {
+    position: relative;
+    max-width: toRem(264);
+    z-index: 1;
+    *:not(:last-child) {
+      margin-bottom: toRem(24);
+    }
+  }
+  &__label {
+    font-family: "Montserrat", sans-serif;
+    font-size: toRem(18);
+    font-weight: 800;
+    line-height: 1.67;
+    letter-spacing: toRem(0.251);
+    text-transform: capitalize;
+  }
+  &__title {
+    font-size: toRem(34);
+    font-weight: 800;
+    line-height: 1.32;
+    text-transform: capitalize;
+    &:not(:last-child) {
+      margin-bottom: toRem(10);
+    }
+  }
+  &__text {
+    line-height: 1.56;
+    letter-spacing: toRem(0.251);
+    text-transform: uppercase;
+    &:not(:last-child) {
+      margin-bottom: toRem(41);
+    }
+    p:not(:last-child) {
+      margin-bottom: toRem(10);
+    }
+  }
+  &__link {
+    font-size: toRem(20);
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 400 / 393;
+    object-fit: cover;
+    object-position: top;
+    border-radius: toRem(12);
+  }
+}

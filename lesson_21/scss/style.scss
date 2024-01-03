@@ -23,7 +23,9 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 // Функції
 @import "_functions.scss";
 // Компоненти
-@import "_common.scss";
+@import "_slider.scss";
+@import "_sales.scss";
+@import "_new.scss";
 
 
 
@@ -60,7 +62,7 @@ body {
   width: 100%;
   min-height: toRem(108);
   padding: toRem(5) 0;
-  background-color: #ffffff;
+  background-color: $light-color;
   z-index: 50;
 
 		// .header__container
@@ -164,7 +166,7 @@ body {
         width: 50%;
         min-width: 320px;
         height: 108px;
-        background: #ffffff;
+        background: $light-color;
         transition: all 0.3s ease;
         z-index: 58;
       }
@@ -187,13 +189,13 @@ body {
 		// .menu__link
   &__link {
     padding: toRem(5);
-    color: #807D7E;
+    color: $title-color;
     font-size: toRem(22);
     font-weight: 500;
     line-height: 1.2;
     transition: all 0.3s ease;
     &--active {
-      color: #3C4242;
+      color: $title-color;
       font-weight: 700;
     }
     @media (any-hover: hover) {
@@ -225,21 +227,21 @@ body {
   @extend %flex;
   padding: toRem(12) toRem(20);
   gap: 12px;
-  background: #F6F6F6;
+  background: $light-background;
   border-radius: toRem(8);
   cursor: pointer;
 		// .search__icon
 		&__icon {
       width: toRem(20);
       height: toRem(20);
-      fill: #807D7E;
+      fill: $text-color;
 		}
 
 		// .search__label
 
 		&__input {
       width: calc(100% - (12px + 20px));
-      background: #F6F6F6;
+      background: $light-background;
       &::placeholder {
         font-size: toRem(16);
         line-height: 1.2;
@@ -250,7 +252,7 @@ body {
 .icon {
   width: toRem(20);
   height: toRem(20);
-  stroke: #807D7E;
+  stroke: $text-color;
 }
 .actions-header {
   position: relative;
@@ -262,7 +264,7 @@ body {
     flex-shrink: 0;
     padding: toRem(12);
     border-radius: toRem(8);
-    background: #F6F6F6;
+    background: $light-background;
     transition: all 0.3s ease;
     @media (any-hover: hover) {
     &:hover {
@@ -302,5 +304,37 @@ body {
       top: 50%;
       transform: translate(0, -50%);
     }
+  }
+}
+
+.section {
+  padding-bottom: toRem(100);
+}
+
+.section {
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: toRem(70);
+    }
+  }
+}
+
+.subtitle {
+  display: flex;
+  font-size: toRem(34);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: toRem(0.68);
+  gap: toRem(20);
+  align-items: flex-start;
+  text-transform: capitalize;
+  color: $title-color;
+  &::before {
+    content: "";
+    width: toRem(6);
+    height: toRem(30);
+    flex: 0 0 toRem(6);
+    background: $bright-color;
+    border-radius: toRem(10);
   }
 }
