@@ -1,0 +1,50 @@
+.limelight {
+  &__cards {
+    grid-template-columns: repeat(auto-fill, minmax(toRem(282), 1fr));
+    gap: toRem(36);
+  }
+}
+.item-product {
+
+  &__img-wrapper {
+    position: relative;
+    &--like {
+      border-radius: toRem(12);
+    }
+  }
+
+  &__heart {
+    position: absolute;
+    top: toRem(27);
+    right: toRem(21);
+  }
+
+  &__img {
+    &--like {
+      aspect-ratio: 282 / 370;
+      border-radius: toRem(12);
+    }
+  }
+
+  &__price {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: $title-color;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+.like {
+  width: toRem(34);
+  height: toRem(34);
+  fill: none;
+  z-index: 1;
+  transition: all 0.3s ease;
+  @media (any-hover: hover) {
+    &:hover {
+      stroke: $bright-color;
+      fill: red;
+    }
+  }
+}

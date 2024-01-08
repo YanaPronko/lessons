@@ -1,0 +1,255 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: toRem(108);
+  padding: toRem(5) 0;
+  background-color: $light-color;
+  z-index: 50;
+
+		// .header__container
+  &__container {
+    @extend %flex;
+    justify-content: space-between;
+    gap: toRem(10);
+    width: 100%;
+  }
+
+  // .header__logo
+  &__logo {
+  }
+
+		// .header__block
+		&__block {
+      display: flex;
+      align-items: center;
+      column-gap: toRem(20);
+      row-gap: toRem(10);
+      @media (min-width: toEm(1200)) {
+        column-gap: toRem(76);
+      }
+		}
+
+		// .header__navigation
+
+		&__navigation {
+		}
+
+		// .header__search
+
+		&__search {
+		}
+
+		// .header__actions
+		&__actions {
+      @extend %flex;
+      gap: toRem(12);
+		}
+}
+
+.logo {
+  position: relative;
+  flex: 0 0 toRem(91);
+  z-index: 58;
+
+	// .logo__img
+	&__img {
+    @include img(91, 45, center, cover);
+	}
+}
+.menu {
+  flex: 1 1 auto;
+
+  &.open {
+    .menu__body {
+      right: 0;
+      &::before {
+        right: 0;
+      }
+    }
+    & .overlay {
+      right: 0;
+    }
+    & ~ .burger-menu {
+      &::before {
+        transform: rotate(-45deg);
+        top: 50%;
+        margin-top: -1px;
+      }
+      span {
+        transform: scale(0);
+      }
+      &::after {
+        transform: rotate(45deg);
+        bottom: 50%;
+        margin-bottom: -1px;
+      }
+    }
+  }
+		// .menu__body
+  &__body {
+    @media (max-width: toEm(1100)) {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      padding-top: toRem(130);
+      width: 50%;
+      min-width: toRem(320);
+      height: 100%;
+      overflow: auto;
+      background: rgb(170, 164, 164);
+      transition: all 0.3s ease;
+      z-index: 58;
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        min-width: 320px;
+        height: 108px;
+        background: $light-color;
+        transition: all 0.3s ease;
+        z-index: 58;
+      }
+    }
+  }
+
+		// .menu__list
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(40);
+    row-gap: toRem(10);
+    flex-wrap: wrap;
+    @media (max-width: toEm(1100)) {
+      flex-direction: column;
+      row-gap: toRem(30);
+    }
+  }
+
+		// .menu__link
+  &__link {
+    padding: toRem(5);
+    color: $title-color;
+    font-size: toRem(22);
+    font-weight: 500;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+    &--active {
+      color: $title-color;
+      font-weight: 700;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: $bright-color;
+        text-decoration: underline;
+      }
+    }
+    @media (max-width: toEm(1100)) {
+      font-size: toRem(36);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: toRem(108);
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-width: toRem(320);
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;;
+  z-index: 55;
+}
+
+.search {
+  @extend %flex;
+  padding: toRem(12) toRem(20);
+  gap: 12px;
+  background: $light-background;
+  border-radius: toRem(8);
+  cursor: pointer;
+		// .search__icon
+		&__icon {
+      width: toRem(20);
+      height: toRem(20);
+      fill: $text-color;
+		}
+
+		// .search__label
+
+		&__input {
+      width: calc(100% - (12px + 20px));
+      background: $light-background;
+      &::placeholder {
+        font-size: toRem(16);
+        line-height: 1.2;
+        color: $text-color;
+      }
+		}
+}
+
+.icon {
+  width: toRem(20);
+  height: toRem(20);
+  stroke: $text-color;
+}
+
+.actions-header {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 58;
+
+  // .actions-header__link
+  &__link {
+    flex-shrink: 0;
+    padding: toRem(12);
+    border-radius: toRem(8);
+    background: $light-background;
+    transition: all 0.3s ease;
+    @media (any-hover: hover) {
+    &:hover {
+      .icon {
+        stroke: $bright-color;
+      }
+    }
+  }
+  }
+}
+
+.burger-menu {
+  display: none;
+  @media (max-width: toEm(1100)) {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 18px;
+    z-index: 58;
+    &::before,
+    &::after,
+    span {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #000000;
+      transition: all 0.3s;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}

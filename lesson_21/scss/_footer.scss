@@ -1,0 +1,169 @@
+.footer {
+  padding: toRem(59) 0;
+  background: $title-color;
+  &__container {
+    &.footer__container--padding {
+      padding-left: toRem(75);
+    }
+
+  }
+
+  &__menu {
+  }
+
+  &__subtitle {
+    color: $light-background;
+    font-size: toRem(28.579);
+    font-weight: 700;
+    line-height: 2.169;
+    text-transform: capitalize;
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+  }
+
+  &__list {
+    li:not(:last-child) {
+      margin-bottom: toRem(5);
+    }
+  }
+
+  &__link,
+  &__adress {
+    padding: toRem(5px);
+    color: $light-background;
+    font-size: toRem(18);
+    font-weight: 500;
+    line-height: 2.169;
+  }
+  &__link {
+    transition: all 0.3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $bright-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__adress {
+  }
+
+  &__social {
+    align-items: end;
+    display: flex;
+    gap: toRem(10);
+  }
+
+  &__apps {
+    grid-column-start: 4;
+  }
+
+  &__label {
+    color: $light-background;
+    font-size: toRem(28.579);
+    font-weight: 700;
+    line-height: 2;
+    transition: all 0.3s ease;
+    @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+        color: $bright-color;
+        text-decoration: underline;
+      }
+    }
+    // &::marker {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    // }
+  }
+
+  &__categories {
+    position: relative;
+    padding: toRem(29) 0 toRem(34) 0;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: toRem(-75);
+      width: toRem(1240);
+      height: 1px;
+      opacity: 0.4;
+      background: #BEBCBD;
+    }
+    &:before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+
+    .footer__list {
+      padding-left: toRem(15);
+    }
+  }
+
+  &__copyright {
+    padding-top: toRem(37);
+    color: $light-color;
+    font-size: toRem(18);
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+.grid-container {
+  padding: 0 toRem(70) toRem(43) 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
+  column-gap: toRem(80);
+  row-gap: toRem(5);
+}
+
+.social-icon {
+  @extend %flex;
+  justify-content: center;
+  width: toRem(37);
+  height: toRem(37);
+  font-family: "Roboto", sans-serif;
+  font-size: toRem(17.088);
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: toRem(0.342);
+  color: #2A2F2F;
+  background: $light-background;
+  border-radius: toRem(10.68);
+  transition: all 0.3s ease;
+  &--in {
+    @media (any-hover:hover) {
+      &:hover {
+        outline: 1px solid $bright-color;
+        color: $bright-color;
+      }
+    }
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      cursor: pointer;
+      stroke: $bright-color;
+
+    }
+  }
+}
+
+.apps-wrapper {
+  display: flex;
+  gap: toRem(21);
+}
+
+.app {
+  width: toRem(154);
+  height: toRem(51);
+  @media (any-hover: hover) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

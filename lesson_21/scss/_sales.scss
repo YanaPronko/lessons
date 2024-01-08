@@ -11,6 +11,12 @@
     grid-template-columns: repeat(auto-fill, minmax(toRem(400), 1fr));
     justify-content: center;
     gap: toRem(30);
+    @media (max-width: toEm(992)) {
+      gap: toRem(15);
+    }
+    @media (max-width: toEm(650)) {
+      grid-template-columns: minmax(290px, 1fr);
+    }
   }
 }
 
@@ -20,6 +26,9 @@
   border-radius: toRem(12);
   &--right {
     padding: toRem(57) 0 toRem(55) toRem(30);
+    @media (max-width: toEm(650)) {
+      padding: toRem(57) 0 toRem(55) toRem(10);
+    }
   }
   &__content {
     position: relative;
@@ -27,6 +36,9 @@
     z-index: 1;
     *:not(:last-child) {
       margin-bottom: toRem(24);
+    }
+    @media (max-width: toEm(992)) {
+      max-width: toRem(200);
     }
   }
   &__label {
@@ -44,6 +56,9 @@
     text-transform: capitalize;
     &:not(:last-child) {
       margin-bottom: toRem(10);
+    }
+    @media (max-width: toEm(992)) {
+      font-size: toRem(26);
     }
   }
   &__text {
@@ -80,5 +95,8 @@
     object-fit: cover;
     object-position: top;
     border-radius: toRem(12);
+  }
+  @media (max-width: toEm(650)) {
+    padding: toRem(67) 0 toRem(80) toRem(10);
   }
 }

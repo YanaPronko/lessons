@@ -34,6 +34,9 @@
   &__item {
     display: grid;
     gap: toRem(33);
+    @media (max-width: toEm(650)) {
+      gap: toRem(15);
+    }
   }
   &__link {
     &-image {
@@ -49,7 +52,7 @@
     transition: all 0.3s ease;
     @media (any-hover: hover) {
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
       }
     }
   }

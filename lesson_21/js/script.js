@@ -44,9 +44,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const swiper = new Swiper('.swiper', {
     // Optional parameter
+    lazy: true,
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.slider-swiper__pagination',
+      clickable: true,
     },
 
     // Navigation arrows
@@ -56,4 +58,17 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  const feedbackSwiper = new Swiper('.feedback__swiper', {
+    // Optional parameter
+    slidesPerView: 3,
+    spaceBetween: 23,
+    // If we need pagination
+    pagination: {
+      el: '.feedback__pagination',
+      clickable: true,
+    },
+  });
+
 });
+
+

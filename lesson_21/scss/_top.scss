@@ -1,0 +1,57 @@
+.top {
+  padding-bottom: toRem(77);
+  &__container {
+    &.top__container--background {
+      padding: toRem(44) 0 toRem(60) 0;
+      background: $title-color;
+      border: toRem(1) solid #323232;
+      border-radius: toRem(12);
+      color: $light-color;
+    }
+  }
+  &__content {
+    text-align: center;
+    *:not(:last-child) {
+      margin-bottom: toRem(25);
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(67);
+    }
+  }
+  &__title {
+    font-family: "Core Sans C", sans-serif;
+    font-size: toRem(50);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  &__label {
+    font-size: toRem(22);
+    font-weight: 400;
+    line-height: 1.2;
+    span {
+      color: #FBD103;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+}
+
+.brands {
+  // @include gridCards(fill, toRem(177), 1fr, toRem(24));
+  display: grid;
+  grid-template-columns: repeat(5, toRem(177));
+  gap: toRem(24);
+  justify-content: center;
+  // &__item {
+  //   @extend %flex;
+  //   justify-content: center;
+  //   padding: toRem(10) toRem(15);
+  //   border-radius: toRem(12);
+  //   background: $light-color;
+
+  // }
+  &__icon {
+    @include img(177, 85, center, cover);
+    border-radius: toRem(12);
+  }
+}
