@@ -31,6 +31,13 @@
   grid-template-columns: repeat(auto-fill, minmax(toRem(263), 1fr));
   gap: toRem(38);
   flex: 1 1 auto;
+  @media (max-width: toEm(665.98)) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(20);
+  }
+  @media (max-width: toEm(500)) {
+    grid-template-columns: 1fr;
+  }
   &__item {
     display: grid;
     gap: toRem(33);

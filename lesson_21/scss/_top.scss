@@ -39,17 +39,16 @@
 .brands {
   // @include gridCards(fill, toRem(177), 1fr, toRem(24));
   display: grid;
-  grid-template-columns: repeat(5, toRem(177));
+  grid-template-columns: repeat(2, toRem(177));
   gap: toRem(24);
   justify-content: center;
-  // &__item {
-  //   @extend %flex;
-  //   justify-content: center;
-  //   padding: toRem(10) toRem(15);
-  //   border-radius: toRem(12);
-  //   background: $light-color;
+  @media (min-width: toEm(991.98)) {
+    grid-template-columns: repeat(5, toRem(177));
+  }
+  @media (max-width: toEm(500)) {
+    grid-template-columns: toRem(177);
+  }
 
-  // }
   &__icon {
     @include img(177, 85, center, cover);
     border-radius: toRem(12);

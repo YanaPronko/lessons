@@ -1,4 +1,8 @@
 .feedback {
+  &__swiper {
+    overflow: hidden;
+  }
+  
   &__wrapper {
     &:not(:last-child) {
       margin-bottom: toRem(13);

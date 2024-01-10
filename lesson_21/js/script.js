@@ -10,32 +10,17 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu');
     const overlay = document.querySelector('.overlay');
     const burgerIcon = document.querySelector('.burger-menu');
-    const menuLinksParent = document.querySelectorAll('.menu__item--parent');
-    const subMenuItems = document.querySelectorAll('.sub-menu__item');
+    const menuLinks = document.querySelectorAll('.menu__link');
 
     burgerIcon.addEventListener('click', toggleHamburger);
     overlay.addEventListener('click', toggleHamburger);
 
-    subMenuItems.forEach((subLink) => {
-      subLink.addEventListener('click', toggleHamburger);
-    });
-
-    menuLinksParent.forEach((link) => {
-      link.addEventListener('click', toggleSubmenu);
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', toggleHamburger);
     });
 
     function toggleHamburger() {
       menu.classList.toggle('open');
-    }
-
-    function toggleSubmenu(e) {
-      menuLinksParent.forEach((link) => {
-        if (link === e.currentTarget) {
-          e.currentTarget.classList.toggle('open');
-        } else {
-          link.classList.remove('open');
-        }
-      });
     }
   }
 
@@ -66,6 +51,20 @@ window.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: '.feedback__pagination',
       clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      630: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 23,
+      },
     },
   });
 

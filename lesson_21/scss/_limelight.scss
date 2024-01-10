@@ -2,6 +2,12 @@
   &__cards {
     grid-template-columns: repeat(auto-fill, minmax(toRem(282), 1fr));
     gap: toRem(36);
+    @media (max-width: toEm(629.98)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: toEm(500)) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .item-product {

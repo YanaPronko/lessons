@@ -1,13 +1,16 @@
 .footer {
   padding: toRem(59) 0;
   background: $title-color;
-  &__container {
-    &.footer__container--padding {
-      padding-left: toRem(75);
-    }
-
+  @media (max-width: toEm(500)) {
+    padding: toRem(20) 0;
   }
-
+  &__container {
+    @media (min-width: toEm(1170)) {
+      &.footer__container--padding {
+        padding-left: toRem(75);
+      }
+    }
+  }
   &__menu {
   }
 
@@ -20,6 +23,9 @@
     &:not(:last-child) {
       margin-bottom: toRem(15);
     }
+    @media (max-width: toEm(500)) {
+      line-height: 1.4;
+    }
   }
 
   &__list {
@@ -30,13 +36,16 @@
 
   &__link,
   &__adress {
-    padding: toRem(5px);
     color: $light-background;
     font-size: toRem(18);
     font-weight: 500;
     line-height: 2.169;
+    @media (max-width: toEm(500)) {
+      line-height: 1.4;
+    }
   }
   &__link {
+    padding: toRem(5);
     transition: all 0.3s ease;
     @media (any-hover: hover) {
       &:hover {
@@ -47,6 +56,9 @@
   }
 
   &__adress {
+    @media (max-width: toEm(500)) {
+      max-width: toRem(290);
+    }
   }
 
   &__social {
@@ -57,6 +69,12 @@
 
   &__apps {
     grid-column-start: 4;
+    @media (max-width: toEm(991.98)) {
+      grid-column-start: span 2;
+    }
+    @media (max-width: toEm(500)) {
+      grid-column-start: 1;
+    }
   }
 
   &__label {
@@ -111,15 +129,30 @@
     font-weight: 700;
     line-height: 2;
     text-align: center;
+    @media (max-width: toEm(500)) {
+      font-size: toRem(14);
+    }
   }
 }
 
 .grid-container {
-  padding: 0 toRem(70) toRem(43) 0;
+  padding: 0 0 toRem(43) 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(max-content, 1fr));
-  column-gap: toRem(80);
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: toRem(30);
   row-gap: toRem(5);
+  @media (min-width: toEm(1170)) {
+    padding: 0 toRem(70) toRem(43) 0;
+    grid-template-columns: repeat(4, minmax(max-content, 1fr));
+    column-gap: toRem(80);
+  }
+  @media (max-width: toEm(991.98)) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: toRem(20);
+  }
+  @media (max-width: toEm(991.98)) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .social-icon {
@@ -156,6 +189,9 @@
 .apps-wrapper {
   display: flex;
   gap: toRem(21);
+  @media (max-width: toEm(991.98)) {
+    gap: toRem(10);
+  }
 }
 
 .app {
@@ -165,5 +201,9 @@
     &:hover {
       cursor: pointer;
     }
+  }
+  @media (max-width: toEm(500)) {
+    width: toRem(140);
+    height: toRem(47);
   }
 }
