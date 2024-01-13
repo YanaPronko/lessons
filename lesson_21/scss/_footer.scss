@@ -4,14 +4,13 @@
   @media (max-width: toEm(500)) {
     padding: toRem(20) 0;
   }
+
   &__container {
     @media (min-width: toEm(1170)) {
       &.footer__container--padding {
         padding-left: toRem(75);
       }
     }
-  }
-  &__menu {
   }
 
   &__subtitle {
@@ -44,6 +43,7 @@
       line-height: 1.4;
     }
   }
+
   &__link {
     padding: toRem(5);
     transition: all 0.3s ease;
@@ -90,11 +90,6 @@
         text-decoration: underline;
       }
     }
-    // &::marker {
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    // }
   }
 
   &__categories {
@@ -108,11 +103,13 @@
       width: toRem(1240);
       height: 1px;
       opacity: 0.4;
-      background: #BEBCBD;
+      background: #bebcbd;
     }
+
     &:before {
       top: 0;
     }
+
     &::after {
       bottom: 0;
     }
@@ -160,17 +157,18 @@
   justify-content: center;
   width: toRem(37);
   height: toRem(37);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: toRem(17.088);
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: toRem(0.342);
-  color: #2A2F2F;
+  color: #2a2f2f;
   background: $light-background;
   border-radius: toRem(10.68);
   transition: all 0.3s ease;
+  
   &--in {
-    @media (any-hover:hover) {
+    @media (any-hover: hover) {
       &:hover {
         outline: 1px solid $bright-color;
         color: $bright-color;
@@ -181,7 +179,6 @@
     &:hover {
       cursor: pointer;
       stroke: $bright-color;
-
     }
   }
 }

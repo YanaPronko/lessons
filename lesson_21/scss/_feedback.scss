@@ -12,7 +12,7 @@
     height: auto;
     padding: toRem(23);
     border-radius: toRem(10);
-    border: toRem(1.8) solid #BEBCBD;
+    border: toRem(1.8) solid #bebcbd;
     background: $light-color;
     cursor: grab;
     > *:not(:last-child) {
@@ -27,7 +27,7 @@
   }
 
   &__name {
-    font-family: "Core Sans C", sans-serif;
+    font-family: 'Core Sans C', sans-serif;
     font-size: toRem(22);
     font-weight: 500;
     line-height: 1.2;
@@ -57,7 +57,9 @@
 }
 
 .avatar {
+  max-width: toRem(58);
   aspect-ratio: 58 / 58;
+  object-fit: cover;
 }
 
 .stars {

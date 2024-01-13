@@ -157,13 +157,18 @@ textarea {
 .section {
   padding-bottom: 6.25rem;
 }
+@media (max-width: 31.25em) {
+  .section {
+    padding-bottom: 2.5rem;
+  }
+}
 
 .section__title:not(:last-child) {
   margin-bottom: 4.375rem;
 }
 @media (max-width: 31.25em) {
   .section__title:not(:last-child) {
-    margin: 0 auto 2.5rem auto;
+    margin: 0 auto 1.25rem auto;
   }
 }
 @media (max-width: 62em) {
@@ -226,7 +231,6 @@ textarea {
   background: #FFFFFF;
   text-align: center;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .btn--big {
@@ -251,7 +255,7 @@ textarea {
 @media (max-width: 39.37375em) {
   .products {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.25rem;
+    gap: 1.625rem;
   }
 }
 @media (max-width: 31.25em) {
@@ -276,7 +280,6 @@ textarea {
      object-fit: cover;
   border-radius: 0.625rem;
   -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 @media (any-hover: hover) {
@@ -310,13 +313,12 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: #2A2F2F;
+  color: #2a2f2f;
   font-size: 17.875px;
   font-weight: 700;
   line-height: 1.56;
   letter-spacing: -0.715px;
   -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 .item-product__title--women {
@@ -336,13 +338,12 @@ textarea {
   }
 }
 .item-product__link {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-size: 0.8379375rem;
   font-weight: 500;
   line-height: 2;
   letter-spacing: -0.0335rem;
   -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 .item-product__link--women {
@@ -365,7 +366,6 @@ textarea {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   cursor: pointer;
 }
@@ -449,6 +449,9 @@ textarea {
 }
 .header__search {
   z-index: 58;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .header__actions {
   gap: 0.75rem;
@@ -503,7 +506,6 @@ textarea {
     overflow: auto;
     background: rgb(170, 164, 164);
     -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 58;
   }
@@ -517,7 +519,6 @@ textarea {
     height: 108px;
     background: #FFFFFF;
     -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 58;
   }
@@ -557,7 +558,6 @@ textarea {
   font-weight: 500;
   line-height: 1.2;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .menu__link--active {
@@ -586,7 +586,6 @@ textarea {
   min-width: 20rem;
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 55;
 }
@@ -662,7 +661,6 @@ textarea {
   border-radius: 0.5rem;
   background: #F6F6F6;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -705,7 +703,7 @@ textarea {
     z-index: 58;
   }
   .burger-menu::before, .burger-menu::after,
-.burger-menu span {
+  .burger-menu span {
     content: "";
     position: absolute;
     left: 0;
@@ -713,7 +711,6 @@ textarea {
     height: 2px;
     background: #000000;
     -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
   }
   .burger-menu::before {
@@ -927,7 +924,6 @@ textarea {
   line-height: 1.5;
   text-decoration: underline;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-transform: capitalize;
 }
@@ -983,7 +979,6 @@ textarea {
   -webkit-filter: invert(24%) sepia(19%) saturate(148%) hue-rotate(131deg) brightness(98%) contrast(96%);
           filter: invert(24%) sepia(19%) saturate(148%) hue-rotate(131deg) brightness(98%) contrast(96%);
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1032,7 +1027,6 @@ textarea {
      object-fit: cover;
   border-radius: 0.75rem;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1047,7 +1041,6 @@ textarea {
   letter-spacing: 0.0125rem;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1193,7 +1186,6 @@ textarea {
   text-transform: uppercase;
   border: 0.125rem solid #000000;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .item-save__button--white {
@@ -1234,7 +1226,6 @@ textarea {
   fill: none;
   stroke: #3C4242;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .arrow-icon--white {
@@ -1268,7 +1259,13 @@ textarea {
 }
 @media (max-width: 47.99875em) {
   .everyday__block {
+    padding: 6.25rem 0.625rem 1.25rem 3.75rem;
     border-radius: 0.5rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .everyday__block {
+    padding: 3.75rem 1.25rem 1.25rem;
   }
 }
 .everyday__block--left {
@@ -1287,6 +1284,11 @@ textarea {
 .everyday__content *:not(:last-child) {
   margin-bottom: 1.875rem;
 }
+@media (max-width: 31.25em) {
+  .everyday__content {
+    max-width: 100%;
+  }
+}
 .everyday__title {
   font-family: "Core Sans C", sans-serif;
   font-size: 2.125rem;
@@ -1294,6 +1296,11 @@ textarea {
   line-height: 1.5;
   letter-spacing: 0.013rem;
   text-transform: uppercase;
+}
+@media (max-width: 31.25em) {
+  .everyday__title {
+    font-size: 1.5rem;
+  }
 }
 .everyday__text:not(:last-child) {
   margin-bottom: 3.125rem;
@@ -1364,7 +1371,7 @@ textarea {
   line-height: 1.2;
 }
 .top__label span {
-  color: #FBD103;
+  color: #fbd103;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -1445,7 +1452,6 @@ textarea {
   fill: none;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1465,7 +1471,7 @@ textarea {
   height: auto;
   padding: 1.4375rem;
   border-radius: 0.625rem;
-  border: 0.1125rem solid #BEBCBD;
+  border: 0.1125rem solid #bebcbd;
   background: #FFFFFF;
   cursor: -webkit-grab;
   cursor: grab;
@@ -1492,8 +1498,7 @@ textarea {
 }
 .feedback__text p {
   color: #807D7E;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
   line-height: 1.2;
   letter-spacing: 0.0175rem;
@@ -1509,7 +1514,10 @@ textarea {
 }
 
 .avatar {
+  max-width: 3.625rem;
   aspect-ratio: 58/58;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .stars {
@@ -1575,7 +1583,6 @@ textarea {
 .footer__link {
   padding: 0.3125rem;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1617,7 +1624,6 @@ textarea {
   font-weight: 700;
   line-height: 2;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {
@@ -1638,7 +1644,7 @@ textarea {
   width: 77.5rem;
   height: 1px;
   opacity: 0.4;
-  background: #BEBCBD;
+  background: #bebcbd;
 }
 .footer__categories:before {
   top: 0;
@@ -1705,11 +1711,10 @@ textarea {
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: 0.021375rem;
-  color: #2A2F2F;
+  color: #2a2f2f;
   background: #F6F6F6;
   border-radius: 0.6675rem;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 @media (any-hover: hover) {

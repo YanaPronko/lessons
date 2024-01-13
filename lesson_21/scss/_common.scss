@@ -1,5 +1,8 @@
 .section {
   padding-bottom: toRem(100);
+  @media (max-width: toEm(500)) {
+    padding-bottom: toRem(40);
+  }
 }
 
 .section {
@@ -7,11 +10,11 @@
     &:not(:last-child) {
       margin-bottom: toRem(70);
       @media (max-width: toEm(500)) {
-        margin: 0 auto toRem(40) auto;
+        margin: 0 auto toRem(20) auto;
       }
     }
   }
-  @media (max-width: toEm(992)){
+  @media (max-width: toEm(992)) {
     justify-content: center;
   }
 }
@@ -20,7 +23,7 @@
   @extend %flex;
   align-items: flex-start;
   max-width: toRem(420);
-  font-family: "Core Sans C", sans-serif;
+  font-family: 'Core Sans C', sans-serif;
   font-size: toRem(34);
   font-weight: 600;
   line-height: 0.98;
@@ -29,7 +32,7 @@
   text-transform: capitalize;
   color: $title-color;
   &::before {
-    content: "";
+    content: '';
     width: toRem(6);
     height: toRem(30);
     flex: 0 0 toRem(6);
@@ -50,7 +53,7 @@
 
 .btn {
   padding: toRem(12) toRem(44);
-  font-family: "Causten", sans-serif;
+  font-family: 'Causten', sans-serif;
   color: $title-color;
   font-size: toRem(18);
   font-weight: 600;
@@ -77,12 +80,12 @@
   grid-template-columns: repeat(auto-fill, minmax(toRem(270), 1fr));
   gap: toRem(50);
   @media (max-width: toEm(629.98)) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: toRem(36);
-    }
-    @media (max-width: toEm(500)) {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(26);
+  }
+  @media (max-width: toEm(500)) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .item-product {
@@ -116,14 +119,14 @@
   }
   &__title {
     flex-grow: 1;
-    color: #2A2F2F;
+    color: #2a2f2f;
     font-size: 17.875px;
     font-weight: 700;
     line-height: 1.56;
     letter-spacing: -0.715px;
     transition: 0.3s all ease;
     &--women {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       color: #191919;
     }
     &--like {
@@ -140,14 +143,14 @@
     }
   }
   &__link {
-    color: #7F7F7F;
+    color: #7f7f7f;
     font-size: toRem(13.407);
     font-weight: 500;
     line-height: 2;
     letter-spacing: toRem(-0.536);
     transition: 0.3s all ease;
     &--women {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     &--like {
       color: $text-color;

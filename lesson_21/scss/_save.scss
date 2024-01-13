@@ -4,6 +4,7 @@
       padding: 0;
     }
   }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(toRem(420), 0.8fr));
@@ -19,6 +20,7 @@
       grid-template-columns: repeat(6, 1fr);
     }
   }
+
   &__item {
     position: relative;
   }
@@ -41,9 +43,11 @@
   @media (min-width: toEm(1100)) {
     grid-column: span 2;
   }
+
   &--white {
     color: #FFFFFF;
   }
+
   &--left {
     justify-content: flex-start;
     text-align: left;
@@ -56,11 +60,13 @@
       }
     }
   }
+
   &--big {
     @media (min-width: toEm(1100)) {
       grid-column: span 3;
     }
   }
+
   &__content {
     position: relative;
     max-width: toRem(164);
@@ -75,6 +81,7 @@
       text-align: right;
     }
   }
+
   &__arrow {
     display: grid;
     justify-items: center;
@@ -83,15 +90,18 @@
       justify-items: right;
     }
   }
+
   &__title {
     font-size: toRem(28);
     line-height: 1.37;
     letter-spacing: toRem(0.56);
   }
+
   &__label {
     font-family: "Causten", sans-serif;
     line-height: 1.2;
   }
+
   &__text {
     font-size: toRem(18);
     font-weight: 700;
@@ -100,6 +110,7 @@
       margin-bottom: toRem(31);
     }
   }
+
   &__button {
     display: inline-block;
     padding: toRem(8) toRem(20);
@@ -112,9 +123,11 @@
     text-transform: uppercase;
     border: toRem(2) solid #000000;
     transition: all 0.3s ease;
+
     &--white {
       border: toRem(2) solid $light-color;
     }
+
     &--background {
       background: $title-color;
       border: 0;
@@ -131,6 +144,7 @@
       }
     }
   }
+  
   &__image {
     position: absolute;
     top: 0;

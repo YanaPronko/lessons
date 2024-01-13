@@ -1,5 +1,6 @@
 .top {
   padding-bottom: toRem(77);
+
   &__container {
     &.top__container--background {
       padding: toRem(44) 0 toRem(60) 0;
@@ -9,6 +10,7 @@
       color: $light-color;
     }
   }
+
   &__content {
     text-align: center;
     *:not(:last-child) {
@@ -18,18 +20,20 @@
       margin-bottom: toRem(67);
     }
   }
+
   &__title {
-    font-family: "Core Sans C", sans-serif;
+    font-family: 'Core Sans C', sans-serif;
     font-size: toRem(50);
     font-weight: 800;
     line-height: 1.2;
   }
+
   &__label {
     font-size: toRem(22);
     font-weight: 400;
     line-height: 1.2;
     span {
-      color: #FBD103;
+      color: #fbd103;
       font-weight: 700;
       line-height: 1.2;
     }

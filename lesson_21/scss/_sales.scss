@@ -1,11 +1,13 @@
 .sales {
   padding-top: toRem(130);
+
   &__container {
-    font-family: "Core Sans C", sans-serif;
+    font-family: 'Core Sans C', sans-serif;
     font-weight: 500;
     font-size: toRem(16);
     color: $light-color;
   }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(toRem(400), 1fr));
@@ -25,12 +27,14 @@
   position: relative;
   padding: toRem(67) 0 toRem(80) toRem(28);
   border-radius: toRem(12);
+
   &--right {
     padding: toRem(57) 0 toRem(55) toRem(30);
     @media (max-width: toEm(650)) {
       padding: toRem(57) 0 toRem(55) toRem(10);
     }
   }
+
   &__content {
     position: relative;
     max-width: toRem(264);
@@ -42,14 +46,16 @@
       max-width: toRem(200);
     }
   }
+
   &__label {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: toRem(18);
     font-weight: 800;
     line-height: 1.67;
     letter-spacing: toRem(0.251);
     text-transform: capitalize;
   }
+
   &__title {
     font-size: toRem(34);
     font-weight: 800;
@@ -62,6 +68,7 @@
       font-size: toRem(26);
     }
   }
+
   &__text {
     line-height: 1.56;
     letter-spacing: toRem(0.251);
@@ -73,6 +80,7 @@
       margin-bottom: toRem(10);
     }
   }
+
   &__link {
     font-size: toRem(20);
     font-weight: 800;
@@ -86,6 +94,7 @@
       }
     }
   }
+
   &__image {
     position: absolute;
     top: 0;

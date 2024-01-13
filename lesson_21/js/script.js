@@ -12,6 +12,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const burgerIcon = document.querySelector('.burger-menu');
     const menuLinks = document.querySelectorAll('.menu__link');
 
+
+
+    // const emptyDiv = document.createElement('div');
+
+
     burgerIcon.addEventListener('click', toggleHamburger);
     overlay.addEventListener('click', toggleHamburger);
 
@@ -22,6 +27,11 @@ window.addEventListener('DOMContentLoaded', () => {
     function toggleHamburger() {
       menu.classList.toggle('open');
       burgerIcon.classList.toggle('open');
+      if (menu.classList.contains('open')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
     }
   }
 

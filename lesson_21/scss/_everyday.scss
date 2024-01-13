@@ -13,7 +13,11 @@
     padding: toRem(183) toRem(10) toRem(174) toRem(74);
     min-height: toRem(640);
     @media (max-width: toEm(767.98)) {
+      padding: toRem(100) toRem(10) toRem(20) toRem(60);
       border-radius: toRem(8);
+    }
+    @media (max-width: toEm(500)) {
+      padding: toRem(60) toRem(20) toRem(20);
     }
     &--left {
       border-bottom-left-radius: toRem(8);
@@ -31,14 +35,20 @@
     *:not(:last-child) {
       margin-bottom: toRem(30);
     }
+    @media (max-width: toEm(500)) {
+      max-width: 100%;
+    }
   }
   &__title {
-    font-family: "Core Sans C", sans-serif;
+    font-family: 'Core Sans C', sans-serif;
     font-size: toRem(34);
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: toRem(0.208);
     text-transform: uppercase;
+    @media (max-width: toEm(500)) {
+      font-size: toRem(24);
+    }
   }
   &__text {
     &:not(:last-child) {

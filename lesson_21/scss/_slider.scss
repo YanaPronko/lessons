@@ -10,6 +10,7 @@
 }
 
 .slider-swiper {
+  
   &.swiper-horizontal {
     .swiper-pagination-bullets {
       position: absolute;
@@ -35,6 +36,7 @@
     background: $light-color;
     opacity: 0.4;
     border-radius: 0;
+
     &.swiper-pagination-bullet-active {
       opacity: 1;
     }
@@ -58,16 +60,19 @@
   @media (min-width: toEm(992)) {
     padding: toRem(129) toRem(10) toRem(132) toRem(93);
   }
+
   &__content {
     position: relative;
     max-width: toRem(439);
     z-index: 1;
+
     & {
       *:not(:last-child) {
         margin-bottom: toRem(40);
       }
     }
   }
+
   &__image {
     position: absolute;
     top: 0;
