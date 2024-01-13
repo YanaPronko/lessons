@@ -9,54 +9,65 @@
   background-color: $light-color;
   z-index: 50;
 
-		// .header__container
+	// .header__container
   &__container {
     @extend %flex;
     justify-content: space-between;
-    gap: toRem(10);
+    column-gap: toRem(20);
+    row-gap: toRem(15);
     width: 100%;
+    @media(max-width: toEm(500)) {
+      align-items: flex-start;
+    }
   }
 
   // .header__logo
   &__logo {
+    position: relative;
+    z-index: 59;
   }
 
 		// .header__block
-		&__block {
-      display: flex;
-      align-items: center;
-      column-gap: toRem(20);
-      row-gap: toRem(10);
-      @media (min-width: toEm(1200)) {
-        column-gap: toRem(76);
-      }
-		}
+  &__block {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(20);
+    row-gap: toRem(10);
+    flex: 1 1 auto;
+    @media (min-width: toEm(1100)) {
+      column-gap: toRem(76);
+    }
+    @media(max-width: toEm(500)) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 
 		// .header__navigation
 
-		&__navigation {
-		}
+  &__navigation {
+  }
 
 		// .header__search
-
-		&__search {
-		}
-
-		// .header__actions
-		&__actions {
-      @extend %flex;
-      gap: toRem(12);
-		}
+  &__search {
+    z-index: 58;
+  }
+  // .header__actions
+  &__actions {
+    @extend %flex;
+    gap: toRem(12);
+  }
 }
 
 .logo {
-  position: relative;
   flex: 0 0 toRem(91);
-  z-index: 58;
-
+  max-width: toRem(91);
+  @media(max-width: toEm(500)) {
+    flex: 0 0 toRem(61);
+  }
 	// .logo__img
 	&__img {
-    @include img(91, 45, center, cover);
+    @include img(91, 45, center, contain);
 	}
 }
 .menu {
@@ -72,21 +83,21 @@
     & .overlay {
       right: 0;
     }
-    & ~ .burger-menu {
-      &::before {
-        transform: rotate(-45deg);
-        top: 50%;
-        margin-top: -1px;
-      }
-      span {
-        transform: scale(0);
-      }
-      &::after {
-        transform: rotate(45deg);
-        bottom: 50%;
-        margin-bottom: -1px;
-      }
-    }
+    // & ~ .burger-menu {
+    //   &::before {
+    //     transform: rotate(-45deg);
+    //     top: 50%;
+    //     margin-top: -1px;
+    //   }
+    //   span {
+    //     transform: scale(0);
+    //   }
+    //   &::after {
+    //     transform: rotate(45deg);
+    //     bottom: 50%;
+    //     margin-bottom: -1px;
+    //   }
+    // }
   }
 		// .menu__body
   &__body {
@@ -94,7 +105,7 @@
       position: fixed;
       top: 0;
       right: -100%;
-      padding-top: toRem(130);
+      padding-top: toRem(150);
       width: 50%;
       min-width: toRem(320);
       height: 100%;
@@ -113,6 +124,9 @@
         background: $light-color;
         transition: all 0.3s ease;
         z-index: 58;
+        @media(max-width: toEm(500)) {
+          height: toRem(121);
+      }
       }
     }
   }
@@ -165,6 +179,9 @@
   background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;;
   z-index: 55;
+  @media(max-width: toEm(500)) {
+    top: toRem(209);
+  }
 }
 
 .search {
@@ -174,25 +191,26 @@
   background: $light-background;
   border-radius: toRem(8);
   cursor: pointer;
-  z-index: 58;
-		// .search__icon
-		&__icon {
-      width: toRem(20);
-      height: toRem(20);
-      fill: $text-color;
-		}
+  @media (max-width: toEm(500)) {
+    width: 100%;
+  }
+	// .search__icon
+  &__icon {
+    width: toRem(20);
+    height: toRem(20);
+    fill: $text-color;
+  }
 
 		// .search__label
-
-		&__input {
-      width: calc(100% - (12px + 20px));
-      background: $light-background;
-      &::placeholder {
-        font-size: toRem(16);
-        line-height: 1.2;
-        color: $text-color;
-      }
-		}
+  &__input {
+    width: calc(100% - (12px + 20px));
+    background: $light-background;
+    &::placeholder {
+      font-size: toRem(16);
+      line-height: 1.2;
+      color: $text-color;
+    }
+  }
 }
 
 .icon {
@@ -225,10 +243,26 @@
 
 .burger-menu {
   display: none;
+  &.open {
+    &::before {
+      transform: rotate(-45deg);
+      top: 50%;
+      margin-top: -1px;
+    }
+    span {
+      transform: scale(0);
+    }
+    &::after {
+      transform: rotate(45deg);
+      bottom: 50%;
+      margin-bottom: -1px;
+    }
+  }
   @media (max-width: toEm(1100)) {
     position: relative;
     display: block;
     width: 30px;
+    flex: 0 0 toRem(30);
     height: 18px;
     z-index: 58;
     &::before,

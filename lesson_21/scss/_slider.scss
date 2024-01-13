@@ -1,5 +1,4 @@
 .slider {
-  // height: 100vh;
   padding-top: toRem(108);
   font-family: "Core Sans C", sans-serif;
   font-size: toRem(26);
@@ -48,6 +47,9 @@
     width: toRem(24);
     height: toRem(44);
     color: $light-color;
+    @media(max-width: toEm(600)) {
+      color: $title-color;
+    }
   }
 }
 

@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function toggleHamburger() {
       menu.classList.toggle('open');
+      burgerIcon.classList.toggle('open');
     }
   }
 
