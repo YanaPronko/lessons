@@ -2,14 +2,15 @@
   // height: 100vh;
   padding-top: toRem(108);
   font-family: "Core Sans C", sans-serif;
-  font-size: toRem(32);
+  font-size: toRem(26);
   font-weight: 500;
   color: $light-color;
+  @media (min-width: toEm(992)) {
+    font-size: toRem(32);
+  }
 }
 
 .slider-swiper {
-  width: calc(100vw - 30px);
-  height: 716px;
   &.swiper-horizontal {
     .swiper-pagination-bullets {
       position: absolute;
@@ -51,10 +52,13 @@
 }
 
 .slide {
+  padding: toRem(20) toRem(10) toRem(100) toRem(50);
+  @media (min-width: toEm(992)) {
+    padding: toRem(129) toRem(10) toRem(132) toRem(93);
+  }
   &__content {
-    position: absolute;
-    top: toRem(130);
-    left: toRem(197);
+    position: relative;
+    max-width: toRem(439);
     z-index: 1;
     & {
       *:not(:last-child) {
@@ -63,6 +67,9 @@
     }
   }
   &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     aspect-ratio: 1449 / 716;
@@ -79,10 +86,13 @@
 
 .title {
   max-width: toRem(439);
-  font-size: toRem(78);
+  font-size: toRem(48);
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: toRem(0.315);
+  @media (min-width: toEm(992)) {
+    font-size: toRem(78);
+  }
 }
 
 .description {

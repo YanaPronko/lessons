@@ -6,6 +6,9 @@
   &__title {
     &:not(:last-child) {
       margin-bottom: toRem(70);
+      @media (max-width: toEm(500)) {
+        margin: 0 auto toRem(40) auto;
+      }
     }
   }
   @media (max-width: toEm(992)){
@@ -14,14 +17,15 @@
 }
 
 .subtitle {
-  display: flex;
+  @extend %flex;
+  align-items: flex-start;
+  max-width: toRem(420);
   font-family: "Core Sans C", sans-serif;
   font-size: toRem(34);
   font-weight: 600;
   line-height: 0.98;
   letter-spacing: toRem(0.68);
   gap: toRem(20);
-  align-items: flex-start;
   text-transform: capitalize;
   color: $title-color;
   &::before {
@@ -29,11 +33,17 @@
     width: toRem(6);
     height: toRem(30);
     flex: 0 0 toRem(6);
+    margin-top: toRem(4);
     background: $bright-color;
     border-radius: toRem(10);
+    @media (max-width: toEm(500)) {
+      margin-top: toRem(8);
+    }
   }
   @media (max-width: toEm(500)) {
+    justify-content: center;
     text-align: center;
+    gap: toRem(10);
     line-height: 1.3;
   }
 }

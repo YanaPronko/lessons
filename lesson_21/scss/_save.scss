@@ -1,11 +1,19 @@
 .save {
+  .save__container {
+    @media (max-width: toEm(450)) {
+      padding: 0;
+    }
+  }
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(toRem(420), 0.6fr));
+    grid-template-columns: repeat(auto-fill, minmax(toRem(420), 0.8fr));
     gap: toRem(20);
     justify-content: center;
     @media (max-width: toEm(650)) {
-      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(toRem(420), 1fr));
+    }
+    @media (max-width: toEm(450)) {
+      grid-template-columns: repeat(auto-fill, minmax(toRem(290), 1fr));
     }
     @media (min-width: toEm(1100)) {
       grid-template-columns: repeat(6, 1fr);
@@ -27,6 +35,9 @@
   @media (max-width: toEm(650)) {
     padding: toRem(20) toRem(64);
   }
+  @media (max-width: toEm(450)) {
+    padding: toRem(20) toRem(20);
+  }
   @media (min-width: toEm(1100)) {
     grid-column: span 2;
   }
@@ -35,7 +46,11 @@
   }
   &--left {
     justify-content: flex-start;
+    text-align: left;
     @media (max-width: toEm(650)) {
+      .item-save__arrow {
+        justify-items: left;
+      }
       .item-save__content {
         text-align: left;
       }

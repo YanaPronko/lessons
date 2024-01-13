@@ -2,7 +2,7 @@
   &__swiper {
     overflow: hidden;
   }
-  
+
   &__wrapper {
     &:not(:last-child) {
       margin-bottom: toRem(13);
@@ -40,7 +40,6 @@
       color: $text-color;
       text-overflow: ellipsis;
       overflow: hidden;
-      // white-space;
       line-height: 1.2;
       letter-spacing: toRem(0.28);
       &:not(:last-child) {
@@ -51,7 +50,6 @@
 
   &__pagination {
     text-align: center;
-    background: rgba(190, 188, 189, 0.30);
     .swiper-pagination-bullet-active {
       background: $title-color;
     }

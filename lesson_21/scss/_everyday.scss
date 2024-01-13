@@ -3,12 +3,18 @@
     display: flex;
     align-items: stretch;
     color: $light-color;
+    @media (max-width: toEm(767.98)) {
+      flex-direction: column;
+    }
   }
   &__block {
     position: relative;
     flex: 1 1 50%;
-    padding: toRem(183) 0 toRem(174) toRem(74);
-    min-height: toRem(100);
+    padding: toRem(183) toRem(10) toRem(174) toRem(74);
+    min-height: toRem(640);
+    @media (max-width: toEm(767.98)) {
+      border-radius: toRem(8);
+    }
     &--left {
       border-bottom-left-radius: toRem(8);
       border-top-left-radius: toRem(8);
@@ -56,6 +62,10 @@
     height: 100%;
     aspect-ratio: 614 / 640;
     object-fit: cover;
+    object-position: top;
+    @media (max-width: toEm(767.98)) {
+      border-radius: toRem(8);
+    }
     &--left {
       border-bottom-left-radius: toRem(8);
       border-top-left-radius: toRem(8);
